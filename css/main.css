@@ -26,6 +26,9 @@
         max-height: 1000px;
         min-height: 450px;
     }
+    .chap-decor { /* chapter decoration pattern */ 
+        height: 70px !important;
+    }
 }
 
 @media (min-width: 992px) { /* >= large screen */
@@ -78,4 +81,8 @@ body { /* font */
 
 .card-img-standout { /* highlight image with white background */
     filter: drop-shadow(0px 1px 2px var(--color-gray));
+}
+
+.chap-decor { /* chapter decoration pattern size on <=small screen*/ 
+    height: 40px;
 }
