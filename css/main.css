@@ -86,3 +86,22 @@ body { /* font */
 .chap-decor { /* chapter decoration pattern size on <=small screen*/ 
     height: 40px;
 }
+
+.nobr { /* avoid line break */
+    white-space: nowrap;
+}
+
+.img-pub {
+    width: 160px;
+    height: 125px;
+}
+
+.img-box-white {
+    object-fit: contain;
+    box-shadow: 0px 0px 1px var(--color-gray);
+}
+
+.img-box-dark {
+    object-fit: cover;
+}
+
