@@ -17,7 +17,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Vollkorn&display=swap">
     </head>
 
     <body>
@@ -83,6 +85,24 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="nav-item dropdown">
+                            <div class="container d-flex justify-content-between flex-wrap d-lg-none">
+                                <a class="nav-link" href="./news.html">NEWS</a>
+                                <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <div class="flex-row-break"></div>
+                                <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./conference.html">Conference</a></li>
+                                    <li><a class="dropdown-item" href="./media.html">Media</a></li>
+                                </ul> -->
+                            </div>
+                            <div class="container d-none d-lg-block me-3">
+                                <a class="nav-link" href="./news.html">NEWS</a>
+                                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./conference.html">Conference</a></li>
+                                    <li><a class="dropdown-item" href="./media.html">Media</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -101,6 +121,35 @@
                 <h2 class="color-theme wd-yr flex-shrink-0">2023</h2>
                 <hr class="color-theme d-md-none">
                 <ul class="list-unstyled mt-1 flex-grow-1">
+                    <li class="d-flex">
+                        <p class="color-light fw-bold wd-num flex-shrink-0">40</p>
+                        <div class="d-flex justify-content-between flex-grow-1">
+                            <div class="me-2">
+                                <p class="fw-bold">Majorization Theory for Unitary Control of Optical Absorption and Emission</p>
+                                <p class="color-light"><span class="fw-bold color-theme">C. Guo<sup>&dagger;</sup></span> and S. Fan<sup>&dagger;</sup></p>
+                                <p class="color-light">
+                                    <span class="fw-bold me-2">Physical Review Letters</span>
+                                    <span class="me-2">130, 146202</span>
+                                    <span class="me-2 nobr">Apr 2023</span>
+                                    <span class="nobr">
+                                        <a class="color-subtheme text-decoration-none me-2" href="https://doi.org/10.1103/PhysRevLett.130.146202" target="_blank" rel="noopener">doi
+                                            <img src="./icon/doi.svg" height="12" class="mb-1">
+                                        </a>
+                                        <a class="color-subtheme text-decoration-none me-2" href="./pdf/guo2023b.pdf" target="_blank">PDF
+                                            <img src="./icon/pdf.svg" height="12.5" class="mb-1">
+                                        </a>
+                                        <a class="color-subtheme text-decoration-none" href="./pdf/guo2023b_SI.pdf" target="_blank">SI
+                                            <img src="./icon/si.svg" height="12.5" class="mb-1">
+                                        </a>
+                                    </span>
+                                </p>
+                            </div>
+                            <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevLett.130.146202" target="_blank" rel="noopener">
+                                <div class="img-box img-box-white"><img src="./image/guo2023b_fig3.png" class="img-link img-size-pub img-fit-white"></div>
+                            </a>
+                        </div>
+                    </li>
+                    <hr class="color-light d-none d-md-block">
                     <li class="d-flex">
                         <p class="color-light fw-bold wd-num flex-shrink-0">39</p>
                         <div class="d-flex justify-content-between flex-grow-1">
@@ -177,7 +226,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevLett.128.256101" target="_blank" rel="noopener">
-                                <img src="./image/guo2022b_fig5.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2022b_fig5.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -203,7 +252,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevX.12.021023" target="_blank" rel="noopener">
-                                <img src="./image/guo2022a_fig6.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2022a_fig6.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -252,7 +301,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevA.105.023509" target="_blank" rel="noopener">
-                                <img src="./image/guo2022_fig3.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2022_fig3.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -376,7 +425,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevResearch.3.033161" target="_blank" rel="noopener">
-                                <img src="./image/guo2021b_fig4.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2021b_fig4.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -402,7 +451,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1038/s41377-021-00595-6" target="_blank" rel="noopener">
-                                <img src="./image/guo2021_fig1.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2021_fig1.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -520,7 +569,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1063/5.0047308" target="_blank" rel="noopener">
-                                <img src="./image/guo2021a_fig3.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2021a_fig3.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -575,7 +624,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1021/acsphotonics.0c01376" target="_blank" rel="noopener">
-                                <img src="./image/guo2020c_fig0.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2020c_fig0.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -601,7 +650,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1364/OPTICA.392978" target="_blank" rel="noopener">
-                                <img src="./image/guo2020b_fig1.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2020b_fig1.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -650,7 +699,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevB.102.085401" target="_blank" rel="noopener">
-                                <img src="./image/guo2020a_fig1.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2020a_fig1.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -676,7 +725,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1002/adom.202000100" target="_blank" rel="noopener">
-                                <img src="./image/asadchy2020a_fig2.png" class="img-pub img-box-dark">
+                                <div class="img-box img-box-white"><img src="./image/asadchy2020a_fig2.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -702,7 +751,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1021/acs.nanolett.9b05179" target="_blank" rel="noopener">
-                                <img src="./image/zhao2020_fig0.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/zhao2020_fig0.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -728,7 +777,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevLett.124.106103" target="_blank" rel="noopener">
-                                <img src="./image/guo2020_fig4.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2020_fig4.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -783,7 +832,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1103/PhysRevB.100.205416" target="_blank" rel="noopener">
-                                <img src="./image/guo2019_fig2.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2019_fig2.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -838,7 +887,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1364/JOSAA.35.001685" target="_blank" rel="noopener">
-                                <img src="./image/guo2018b_fig5.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/guo2018b_fig5.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -864,7 +913,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1038/s41567-018-0233-6" target="_blank" rel="noopener">
-                                <img src="./image/liu2018c_fig2.png" class="img-pub img-box-white">
+                                <div class="img-box img-box-white"><img src="./image/liu2018c_fig2.png" class="img-link img-size-pub img-fit-white"></div>
                             </a>
                         </div>
                     </li>
@@ -890,7 +939,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1364/OPTICA.5.000251" target="_blank" rel="noopener">
-                                <img src="./image/guo2018a_fig2.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2018a_fig2.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -1163,7 +1212,7 @@
                                 </p>
                             </div>
                             <a class="d-none d-md-block" href="https://doi.org/10.1186/s43593-022-00036-w" target="_blank" rel="noopener">
-                                <img src="./image/guo2023_cover.png" class="img-pub img-box-dark">
+                                <div class="img-box"><img src="./image/guo2023_cover.png" class="img-link img-size-pub img-fit-dark"></div>
                             </a>
                         </div>
                     </li>
@@ -1324,20 +1373,27 @@
                 </div>
                 <div class="col-md-12 col-lg-8 row justify-content-start">
                     <div class="col-6 col-md-3 col-lg-3 pr-0 mb-3">
-                        <h5>HOME</h5>
+                        <h5><a class="text-reset text-decoration-none" href="./index.html">HOME</a></h5>
                         <ul class="list-unstyled mb-0">
                             <li><a class="text-secondary text-decoration-none" href="./index.html#highlight">Highlight</a></li>
                             <li><a class="text-secondary text-decoration-none" href="./index.html#bio">Bio</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3 col-lg-3 pr-0 mb-3">
-                        <h5>PUBLICATION</h5>
+                        <h5><a class="text-reset text-decoration-none" href="./publication.html">PUBLICATION</a></h5>
                         <ul class="list-unstyled mb-0">
                             <li><a class="text-secondary text-decoration-none" href="./publication.html#article">Article</a></li>
                             <li><a class="text-secondary text-decoration-none" href="./publication.html#review">Review</a></li>
                             <li><a class="text-secondary text-decoration-none" href="./publication.html#book">Book</a></li>
-                            <li><a class="text-secondary text-decoration-none" href="./publication.html#Patent">Patent</a></li>
+                            <li><a class="text-secondary text-decoration-none" href="./publication.html#patent">Patent</a></li>
                         </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 pr-0 mb-3">
+                        <h5><a class="text-reset text-decoration-none" href="./news.html">NEWS</a></h5>
+                        <!-- <ul class="list-unstyled mb-0">
+                            <li><a class="text-secondary text-decoration-none" href="./conference.html">Conference</a></li>
+                            <li><a class="text-secondary text-decoration-none" href="./media.html">Media</a></li>
+                        </ul> -->
                     </div>
                 </div>
             </div>
