@@ -1,4 +1,5 @@
-import publications from "../asset/publication.json" assert {type: "json"};
+// import publications from "../asset/publication.json" assert {type: "json"};
+import { publications } from "../asset/publication.js";
 import { setFooter, setNavbar, createTitle } from "./module/utils.js";
 
 const publication_types = ["article", "review", "book", "patent"];

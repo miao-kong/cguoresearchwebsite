@@ -1,4 +1,5 @@
-import publications from "../asset/publication.json" assert {type: "json"};
+// import publications from "../asset/publication.json" assert {type: "json"};
+import { publications } from "../asset/publication.js";
 import { setFooter, setNavbar, createTitle } from "./module/utils.js";
 
 // Format: [id, title, list_of_publications, abstract]
@@ -22,7 +23,7 @@ function main () {
 
         container.appendChild(createTitle(research[1]));
 
-        //[todo] add image
+        //[todo] add image 
 
         let abstract = document.createElement("p");
         abstract.setAttribute("class", "fs-5 mb-5");
