@@ -147,6 +147,11 @@ body { /* font */
     height: 125px;
 }
 
+.img-size-news {
+    width: 150px;
+    height: 150px;
+}
+
 .img-link {
     transition: all 0.4s ease-in-out;
 }
@@ -157,4 +162,38 @@ body { /* font */
 
 .fs-smaller {
     font-size: smaller;
+}
+
+.fs-inherit {
+    font-size: inherit;
+}
+
+/* .badge-line {
+    color: var(--color-gray);
+    background-color: transparent;
+    border-radius: 5%;
+    border: 1.5px solid var(--color-gray);
+    font-size: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+} */
+
+a.headerlink {
+    color: var(--color-green);
+    opacity: 0;
+    font-size: .8em;
+    padding: 0 4px;
+    margin-left: .2em;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    user-select: none
+}
+
+p:hover a.headerlink {
+    opacity: 0.5
+}
+
+p a.headerlink:hover {
+    opacity: 1
 }
