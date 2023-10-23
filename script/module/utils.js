@@ -3,6 +3,7 @@ const contacts = [
     ["ResearchGate", "https://www.researchgate.net/profile/Cheng-Guo-35", "./icon/researchgate.svg"],
     ["ORCID", "https://orcid.org/0000-0003-4913-8150", "./icon/orcid.svg"],
     ["LinkedIn", "https://www.linkedin.com/in/chengguo23", "./icon/linkedin.svg"],
+    ["Twitter", "https://www.twitter.com/chengguo23", "./icon/twitter.svg"],
     ["Email", "mailto:guocheng@stanford.edu", "./icon/email.svg"]
 ];
 
@@ -28,7 +29,7 @@ export function createTitle(title) {
     // Create a section title with decoration
 
     let div = document.createElement("div");
-    div.setAttribute("class", "d-flex justify-content-between mb-5");
+    div.setAttribute("class", "d-flex justify-content-between align-items-center mb-5");
 
     let left_node = document.createElement("img");
     left_node.setAttribute("src", "./icon/cat_stretch_left.svg");
@@ -36,7 +37,7 @@ export function createTitle(title) {
     div.appendChild(left_node);
 
     let text_node = document.createElement("h1");
-    text_node.setAttribute("class", "fw-bold align-self-end mb-0");
+    text_node.setAttribute("class", "fw-bold align-self-end text-center mb-0");
     text_node.textContent = title;
     div.appendChild(text_node);
 

@@ -1,5 +1,5 @@
 // import publications from "../asset/publication.json" assert {type: "json"};
-import { publications } from "../asset/publication.js";
+import { publications } from "../asset/publications.js";
 import { setFooter, setNavbar, createTitle } from "./module/utils.js";
 
 // Format: [id, title, list_of_publications, abstract]
@@ -23,7 +23,50 @@ function main () {
 
         container.appendChild(createTitle(research[1]));
 
-        //[todo] add image 
+        let gallery_wrapper = document.createElement("div");
+        gallery_wrapper.setAttribute("class", "d-flex align-items-center justify-content-center mb-5");
+        container.appendChild(gallery_wrapper);
+
+        let back_button = document.createElement("img");
+        back_button.setAttribute("src", "./icon/back_arrow.svg");
+        back_button.setAttribute("id", "back-button");
+        gallery_wrapper.appendChild(back_button);
+
+        let gallery = document.createElement("div");
+        gallery.setAttribute("class", "gallery"); 
+        gallery_wrapper.appendChild(gallery);
+
+        for (let id of research[2]) {
+
+            let paper = publications[id];
+
+            if (paper.img != null) {
+
+                let img_frame = document.createElement("div");
+                gallery.appendChild(img_frame);
+
+                let img = document.createElement("img");
+                img.setAttribute("src", paper.img[0]);
+                img_frame.appendChild(img);
+
+            }
+
+        }
+
+        let forward_button = document.createElement("img");
+        forward_button.setAttribute("src", "./icon/forward_arrow.svg");
+        forward_button.setAttribute("id", "forward-button");
+        gallery_wrapper.appendChild(forward_button);
+
+        back_button.addEventListener("click", () => {
+            gallery.style.scrollBehavior = "smooth";
+            gallery.scrollLeft -= 300;
+        });
+
+        forward_button.addEventListener("click", () => {
+            gallery.style.scrollBehavior = "smooth";
+            gallery.scrollLeft += 300;
+        });
 
         let abstract = document.createElement("p");
         abstract.setAttribute("class", "fs-5 mb-5");

@@ -1,4 +1,4 @@
-export const publications = {	
+export const publications = {
 	"rt-li2023": {
 		"type": "article",
 		"preprint": true,
@@ -26,6 +26,22 @@ export const publications = {
 		"resource": {
 			"arxiv": "https://arxiv.org/abs/2306.03850"
 		}
+	},
+	"rt-guo2023a": {
+		"type": "article",
+		"place": 41,
+		"label": "Editor's Suggestion",
+		"title": "Singular Topology of Scattering Matrices",
+		"author": ["Cheng Guo+", "Jiazheng Li", "Meng Xiao", "Shanhui Fan"],
+		"info": ["Physical Review B", "108, 155418"],
+		"year": 2023,
+		"month": "October",
+		"day": 17,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevB.108.155418",
+			"pdf": "./pdf/guo2023a.pdf"
+		},
+		"img": ["./image/guo2023a_fig4e.png", "white"]
 	},
 	"rt-guo2023b": {
 		"type": "article",

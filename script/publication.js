@@ -1,5 +1,5 @@
 // import publications from "../asset/publication.json" assert {type: "json"};
-import { publications } from "../asset/publication.js";
+import { publications } from "../asset/publications.js";
 import { setFooter, setNavbar, createTitle } from "./module/utils.js";
 
 const publication_types = ["article", "review", "book", "patent"];
@@ -148,6 +148,17 @@ function main () {
         p_title.textContent = publication.title; 
         div_inner.appendChild(p_title);
 
+        if (publication.label) {
+
+            p_title.textContent += "\xa0\xa0\xa0";
+
+            let label = document.createElement("div");
+            label.setAttribute("class", "badge bg-color-light");
+            label.textContent = publication.label;
+            p_title.append(label)
+
+        }
+
         let a_headerlink = document.createElement("a");
         a_headerlink.setAttribute("class", "headerlink");
         a_headerlink.setAttribute("href", "#" + id);
@@ -160,11 +171,6 @@ function main () {
             p_subtitle.textContent = publication.subtitle;
             div_inner.appendChild(p_subtitle);
         }
-        
-        // let p_author = document.createElement("p");
-        // p_author.setAttribute("class", "color-light");
-        // p_author = addAuthor(p_author, publication.author);
-        // div_inner.appendChild(p_author);
 
         div_inner.appendChild(createAuthor(publication.author));
     
