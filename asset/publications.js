@@ -30,9 +30,9 @@ export const publications = {
 	"rt-guo2023a": {
 		"type": "article",
 		"place": 41,
-		"label": "Editor's Suggestion",
+		"label": "Editors' Suggestion",
 		"title": "Singular Topology of Scattering Matrices",
-		"author": ["Cheng Guo+", "Jiazheng Li", "Meng Xiao", "Shanhui Fan"],
+		"author": ["Cheng Guo+", "Jiazheng Li", "Meng Xiao", "Shanhui Fan+"],
 		"info": ["Physical Review B", "108, 155418"],
 		"year": 2023,
 		"month": "October",

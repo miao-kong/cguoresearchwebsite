@@ -72,11 +72,13 @@ function main () {
         type.textContent = event.type.toUpperCase();
         type_wrap.appendChild(type);
 
-        let label = document.createElement("div");
-        label.setAttribute("class", "badge bg-color-light fs-smaller");
-        label.textContent = event.label;
-        type_wrap.appendChild(label);
-        
+        if (event.label != null) {
+            let label = document.createElement("div");
+            label.setAttribute("class", "badge bg-color-light fs-smaller");
+            label.textContent = event.label;
+            type_wrap.appendChild(label);
+        }
+
         let line = document.createElement("div");
         line.setAttribute("class", "vertical-line d-none d-md-block");
         event_div.appendChild(line);
@@ -124,10 +126,12 @@ function main () {
 
         let type_sm = type_wrap_sm.querySelector("#type");
         type_sm.setAttribute("class", "fw-bold fs-smaller color-subtheme order-last")
-        type_sm.textContent = "\xa0\xa0\xa0" + type_sm.textContent;
-
+        
         let label_sm = type_wrap_sm.querySelector(".badge");
-        label_sm.setAttribute("class", "badge bg-color-light fs-smaller order-first")
+        if (label_sm != null) {
+            label_sm.setAttribute("class", "badge bg-color-light fs-smaller order-first");
+            type_sm.textContent = "\xa0\xa0\xa0" + type_sm.textContent;
+        }
 
         let title = document.createElement("a");
         title.setAttribute("class", "fs-4 fw-bold text-link col-12 col-md-8");
@@ -169,9 +173,9 @@ function main () {
 
         timeline_main.appendChild(hr_main.cloneNode(true));
 
-        let hr = document.createElement("hr");
-        hr.setAttribute("class", "color-light d-md-none mb-5");
-        event_div.appendChild(hr);
+        // let hr = document.createElement("hr");
+        // hr.setAttribute("class", "color-light d-md-none mb-5");
+        // event_div.appendChild(hr);
 
     }
 
