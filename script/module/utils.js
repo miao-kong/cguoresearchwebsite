@@ -13,6 +13,9 @@ const sitemap = [
         ["Bio", "./index.html#bio"]
     ]],
     ["RESEARCH", "./research.html", [
+        ["Topological Scattering", "./research.html#topology"],
+        ["Nonlocal Photonics", "./research.html#wavevector"],
+        ["Thermal Photonics", "./research.html#thermal"],
         ["Weyl Semimetals", "./research.html#weyl"]
     ]],
     ["PUBLICATION", "./publication.html", [

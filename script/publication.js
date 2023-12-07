@@ -236,6 +236,49 @@ function main () {
 
         }
 
+        //[todo] add bibtex
+
+        // let cite_button = document.createElement("a");
+        // cite_button.setAttribute("class", "color-subtheme text-decoration-none me-2");
+        // cite_button.setAttribute("href", "#" + id + "-cite");
+        // cite_button.setAttribute("role", "button");
+        // cite_button.setAttribute("data-bs-toggle", "collapse");
+        // cite_button.setAttribute("aria-expanded", "false");
+        // cite_button.setAttribute("aria-controls", id + "-cite");
+        // cite_button.textContent = " Cite "; //"BibTeX";
+        // resource.appendChild(cite_button);
+
+        // let cite_img = document.createElement("img");
+        // cite_img.setAttribute("class", "mb-1");
+        // cite_img.setAttribute("src", "./icon/cite.svg");
+        // cite_img.setAttribute("height", 13.5);
+        // cite_button.appendChild(cite_img);
+
+        // let cite_collapse = document.createElement("div");
+        // cite_collapse.setAttribute("class", "collapse");
+        // cite_collapse.setAttribute("id", id + "-cite");
+        // div_inner.appendChild(cite_collapse);
+
+        // let cite_card = document.createElement("div");
+        // cite_card.setAttribute("class", "card card-body mb-3");
+        // cite_card.textContent = "Test bibtex citation";
+        // cite_collapse.appendChild(cite_card);
+
+        // let cite_copy = document.createElement("button");
+        // cite_copy.textContent = "copy";
+        // cite_card.appendChild(cite_copy);
+
+        // cite_copy.addEventListener("click", () => {
+        //     navigator.clipboard.writeText(cite_card.textContent);
+        //     alert("Copied to clipboard: " + cite_card.textContent);
+        // });
+
+
+        
+
+
+        //finish bibtex
+
         if (publication.img != null) {
 
             // This div ensures the integrity of image during webpage size adjustment
