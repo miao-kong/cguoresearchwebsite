@@ -1,14 +1,47 @@
-// import publications from "../asset/publication.json" assert {type: "json"};
-import { publications } from "../asset/publications.js";
-import { setFooter, setNavbar, createTitle } from "./module/utils.js";
+// import publications from "/asset/publication.json" assert {type: "json"};
+import { publications } from "/asset/publications.js";
+import { setFooter, setNavbar, createTitle } from "/script/utils.js";
+import { research_interest } from "/asset/content.js";
 
-// Format: [id, title, list_of_publications, abstract]
-const research_areas = [ 
-    ["topology", "Topological Phenomena in Wave Scattering", ["rt-guo2023a", "rt-long2023", "rt-long2021", "rt-wang2021g", "rt-zhu2021a"], "Topology offers a powerful framework for comprehending physical phenomena. While existing studies predominantly examine the topology of the Hamiltonian, the scattering matrix is also vital in characterizing physical systems. Recognizing the lack of a comprehensive topological theory for scattering matrices, I have developed such a framework, focusing on the singular values and vectors which are fundamental characteristics of scattering matrices. Through this theory, I have identified the topological nature of known effects like coherent perfect absorption and introduced new topological scattering phenomena, including coherent perfect extinction."],
-    ["wavevector", "Wavevector-Space Nanophotonics", ["rt-guo2021", "rt-guo2020b", "rt-guo2018a", "rt-guo2018b", "rt-wang2020b", "rt-long2021", "rt-long2022", "bk-guo2019a", "pt-guo2021c"], "Conventional nanophotonic devices like metalens manipulate light with space-dependent transfer functions. However, modern optical information processing tasks increasingly demand wavevector-dependent transfer functions. These functionalities are conventionally achieved through bulky Fourier optics setups, like 4f systems, which limit their practical applications. To address this challenge, I have developed wavevector-space nanophotonics, offering a simpler and more efficient alternative. I proposed a compact 2D Laplace optical differentiator and image filters, optimized for high-throughput, low-latency applications, including bioimaging and optical deep learning. I introduced a device capable of compressing free space, which can significantly miniaturize optical systems. I also proposed a wavevector-space metasurface for generating 3D space-time light bullets, which can propagate in free space without diffraction and with adjustable group velocities."],
-    ["thermal", "Fundamental Concepts in Thermal Photonics", ["rt-guo2023b", "rt-guo2022a", "rt-guo2021a", "rt-guo2020c", "rt-guo2020a", "rt-guo2019", "rt-zhao2020", "rt-ghanekar2022", "rt-zhao2021a", "rt-park2021"], "Thermal radiation is a fundamental phenomenon with important technological implications. Kirchhoff's law, the fundamental law that relates an object's angular spectral absorptivity and emissivity for a reciprocal object, can be violated by nonreciprocal emitters, offering opportunities for achieving ultimate efficiency in solar energy harvesting. I have extended Kirchhoff's law to nonreciprocal thermal emitters, laying a theoretical basis for their design. Another key challenge in thermal photonics is effectively controlling absorption and emission without altering existing photonic structures. To resolve this, I introduced the concept of unitary control. This approach enables efficient control of absorption and emission in multiple modes."],
-    ["weyl", "Photonics Based on Weyl Semimetals", ["rv-guo2023", "rt-guo2020c", "rt-asadchy2020a", "rt-zhao2020", "rt-zheng2017", "rt-zhang2017b", "rt-xu2016b", "rt-belopolski2016", "rt-zheng2016", "rt-xu2015b"], "Breaking Lorentz reciprocity is essential for advancing photonic applications like isolation, circulation, and nonreciprocal thermal radiation. Traditional nonreciprocal materials often exhibit weak effects at optical wavelengths and typically require external magnetic fields, leading to bulky and complicated components. Recognizing the need for new optical materials with inherent strong nonreciprocity, I have explored the potential of Weyl semimetals based on my prior work in synthesizing the first family of Weyl semimetals. Weyl semimetals can exhibit pronounced nonreciprocity due to internal Berry curvatures near Weyl nodes, which act as effective magnetic fields. I have investigated their novel applications in creating compact optical isolators and efficient nonreciprocal thermal emitters. I have also authored a comprehensive tutorial review to foster further research in this emerging field."],
-];
+function createGalleryCard (img_source, title_short, abstract_short, link) {
+
+    let card_container = document.createElement("div");
+    card_container.setAttribute("class", "flip-frame");
+
+    let card = document.createElement("div");
+    card.setAttribute("class", "flip d-flex justify-content-center align-items-center");
+    card_container.appendChild(card);
+
+    let img = document.createElement("img");
+    img.setAttribute("class", "front");
+    img.setAttribute("src", img_source);
+    card.appendChild(img);
+
+    let info = document.createElement("div");
+    info.setAttribute("class", "back d-flex flex-column justify-content-between");
+    card.appendChild(info);
+
+    let title_wrap = document.createElement("div");
+    title_wrap.setAttribute("class", "overflow-hidden");
+    info.append(title_wrap);
+
+    let title = document.createElement("p");
+    title.setAttribute("class", "fw-bold");
+    title.textContent = title_short;
+    title_wrap.appendChild(title);
+
+    let text = document.createElement("p");
+    text.textContent = abstract_short;
+    title_wrap.appendChild(text);
+    
+    let footer = document.createElement("a");
+    footer.setAttribute("class", "text-decoration-none color-subtheme fw-bold mt-3");
+    footer.setAttribute("href", link);
+    footer.textContent = "Learn More >>";
+    info.appendChild(footer);
+
+    return card_container;
+}
 
 function main () {
 
@@ -16,23 +49,28 @@ function main () {
 
     let section = document.querySelector("section");
 
-    for (let research of research_areas) {
+    for (let [id, research] of Object.entries(research_interest)) {
 
         let container = document.createElement("div");
         container.setAttribute("class", "container mt-5 mb-5");
-        container.setAttribute("id", research[0]);
+        container.setAttribute("id", id);
         section.appendChild(container);
 
-        container.appendChild(createTitle(research[1]));
+        container.appendChild(createTitle(research.name));
 
         let gallery_wrapper = document.createElement("div");
         gallery_wrapper.setAttribute("class", "d-flex align-items-center justify-content-center mb-5");
         container.appendChild(gallery_wrapper);
 
         let back_button = document.createElement("img");
-        back_button.setAttribute("src", "./icon/back_arrow.svg");
+        back_button.setAttribute("src", "/icon/back_arrow.svg");
         back_button.setAttribute("id", "back-button");
         gallery_wrapper.appendChild(back_button);
+
+        back_button.addEventListener("click", () => {
+            gallery.style.scrollBehavior = "smooth";
+            gallery.scrollLeft -= 300;
+        }); 
 
         let gallery = document.createElement("div");
         gallery.setAttribute("class", "gallery"); 
@@ -41,18 +79,13 @@ function main () {
         let img_cnt = 0;
         let img_threshold = 6;
 
-        for (let id of research[2]) {
+        for (let id of research.publication) {
 
             let paper = publications[id];
 
             if (paper.img != null) {
 
-                let img_frame = document.createElement("div");
-                gallery.appendChild(img_frame);
-
-                let img = document.createElement("img");
-                img.setAttribute("src", paper.img[0]);
-                img_frame.appendChild(img);
+                gallery.appendChild(createGalleryCard(paper.img[0], paper.title, paper.abstract_short, "/publication.html#" + id));
 
                 img_cnt += 1;
 
@@ -62,20 +95,15 @@ function main () {
 
         if (img_cnt < img_threshold) {
 
-            for (let id of research[2]) {
+            for (let id of research.publication) {
 
                 let paper = publications[id];
 
                 if (paper.imgs != null) {
 
-                    for (let item of paper.imgs) {
+                    for (let [img_id, item] of Object.entries(paper.imgs)) {
 
-                        let img_frame = document.createElement("div");
-                        gallery.appendChild(img_frame);
-
-                        let img = document.createElement("img");
-                        img.setAttribute("src", item[0]);
-                        img_frame.appendChild(img);
+                        gallery.appendChild(createGalleryCard(item.path, paper.title, paper.abstract_short, "/publication.html#" + id));
 
                         img_cnt += 1;
 
@@ -96,27 +124,26 @@ function main () {
         }
 
         let forward_button = document.createElement("img");
-        forward_button.setAttribute("src", "./icon/forward_arrow.svg");
+        forward_button.setAttribute("src", "/icon/forward_arrow.svg");
         forward_button.setAttribute("id", "forward-button");
         gallery_wrapper.appendChild(forward_button);
-
-        back_button.addEventListener("click", () => {
-            gallery.style.scrollBehavior = "smooth";
-            gallery.scrollLeft -= 300;
-        });
 
         forward_button.addEventListener("click", () => {
             gallery.style.scrollBehavior = "smooth";
             gallery.scrollLeft += 300;
         });
 
+        // Abstract
+
         let abstract = document.createElement("p");
         abstract.setAttribute("class", "fs-5 mb-5");
-        abstract.textContent = research[3];
+        abstract.textContent = research.abstract;
         container.appendChild(abstract);
 
+        // Related publications
+
         let related = document.createElement("h5");
-        related.setAttribute("class", "fw-bold color-subtheme");
+        related.setAttribute("class", "fw-bold");
         related.textContent = "Related Publications";
         container.appendChild(related);
         
@@ -124,7 +151,7 @@ function main () {
         ul.setAttribute("class", "list-unstyled mt-1 flex-grow-1 fs-6");
         container.appendChild(ul);
 
-        for (let id of research[2]) {
+        for (let id of research.publication) {
 
             let paper = publications[id];
 
@@ -138,7 +165,7 @@ function main () {
 
             let img = document.createElement("img");
             div_bullet.appendChild(img);
-            img.setAttribute("src", "./icon/orange.svg");
+            img.setAttribute("src", "/icon/orange.svg");
             img.setAttribute("height", 13);
             img.setAttribute("alight", "left");
             img.setAttribute("class", "mt-1");
@@ -148,10 +175,8 @@ function main () {
 
             let a_link = document.createElement("a");
             div_item.appendChild(a_link);
-            a_link.setAttribute("class", "fw-bold text-link");
-            a_link.setAttribute("href", "./publication.html#" + id);
-            a_link.setAttribute("target", "_blank");
-            a_link.setAttribute("rel", "noopener");
+            a_link.setAttribute("class", "fw-bold text-link-hover");
+            a_link.setAttribute("href", "/publication.html#" + id);
             a_link.textContent = paper.title;
 
             let div_ref = document.createElement("div");

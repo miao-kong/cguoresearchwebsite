@@ -1,32 +1,4 @@
-const contacts = [
-    ["Google Scholar", "https://scholar.google.com/citations?user=V_-6CVIAAAAJ", "./icon/googlescholar.svg"],
-    ["ResearchGate", "https://www.researchgate.net/profile/Cheng-Guo-35", "./icon/researchgate.svg"],
-    ["ORCID", "https://orcid.org/0000-0003-4913-8150", "./icon/orcid.svg"],
-    ["LinkedIn", "https://www.linkedin.com/in/chengguo23", "./icon/linkedin.svg"],
-    ["Twitter", "https://www.twitter.com/chengguo23", "./icon/twitter.svg"],
-    ["Email", "mailto:guocheng@stanford.edu", "./icon/email.svg"]
-];
-
-const sitemap = [
-    ["HOME", "./index.html", [
-        ["Highlight", "./index.html#highlight"],
-        ["Bio", "./index.html#bio"]
-    ]],
-    ["RESEARCH", "./research.html", [
-        ["Topological Scattering", "./research.html#topology"],
-        ["Nonlocal Photonics", "./research.html#wavevector"],
-        ["Thermal Photonics", "./research.html#thermal"],
-        ["Weyl Semimetals", "./research.html#weyl"]
-    ]],
-    ["PUBLICATION", "./publication.html", [
-        ["Article", "./publication.html#article"],
-        ["Review", "./publication.html#review"],
-        ["Book", "./publication.html#book"],
-        ["Patent", "./publication.html#patent"]
-    ]],
-    ["NEWS", "./news.html", []]
-];
-
+import { contacts, sitemap } from "/asset/content.js";
 
 export function createTitle(title) {
     // Create a section title with decoration
@@ -35,7 +7,7 @@ export function createTitle(title) {
     div.setAttribute("class", "d-flex justify-content-between align-items-center mb-5");
 
     let left_node = document.createElement("img");
-    left_node.setAttribute("src", "./icon/cat_stretch_left.svg");
+    left_node.setAttribute("src", "/icon/cat_stretch_left.svg");
     left_node.setAttribute("class", "chap-decor");
     div.appendChild(left_node);
 
@@ -45,14 +17,13 @@ export function createTitle(title) {
     div.appendChild(text_node);
 
     let right_node = document.createElement("img");
-    right_node.setAttribute("src", "./icon/cat_stretch_right.svg");
+    right_node.setAttribute("src", "/icon/cat_stretch_right.svg");
     right_node.setAttribute("class", "chap-decor");
     div.appendChild(right_node);
 
     return div;
 
 }
-
 
 export function setNavbar (current) {
     // Add content to navbar
@@ -66,11 +37,11 @@ export function setNavbar (current) {
 
     let brand = document.createElement("a");
     brand.setAttribute("class", "navbar-brand");
-    brand.setAttribute("href", "./index.html");
+    brand.setAttribute("href", "/index.html");
     container.append(brand);
 
     let brand_img = document.createElement("img");
-    brand_img.setAttribute("src", "./icon/orange.svg");
+    brand_img.setAttribute("src", "/icon/orange.svg");
     brand_img.setAttribute("class", "d-inline-block align-text-top");
     brand_img.setAttribute("width", 30);
     brand_img.setAttribute("height", 24);
@@ -119,7 +90,7 @@ export function setNavbar (current) {
     offcanvas.appendChild(logo_right);
 
     let logo_right_img = document.createElement("img");
-    logo_right_img.setAttribute("src", "./icon/cat.svg");
+    logo_right_img.setAttribute("src", "/icon/cat.svg");
     logo_right_img.setAttribute("width", 35);
     logo_right.appendChild(logo_right_img);
 
@@ -190,7 +161,6 @@ export function setNavbar (current) {
     }
 
 }
-
 
 export function setFooter () {
     // Add content to footer
@@ -267,6 +237,7 @@ export function setFooter () {
         for (let leaf of tree[2]) {
 
             let li = document.createElement("li");
+            li.setAttribute("class", "mb-2");
             ul.appendChild(li);
     
             let a = document.createElement("a");

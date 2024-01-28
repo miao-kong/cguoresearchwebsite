@@ -1,15 +1,17 @@
 export const publications = {
-	"rt-li2023": {
+	"rt-li2024": {
 		"type": "article",
-		"preprint": true,
-		"place": null,
+		//"preprint": true,
+		"place": 43,
 		"title": "Braiding Topology of Symmetry-Protected Degeneracy Points in Non-Hermitian Systems",
 		"author": ["Jia-Zheng Li", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Liang Fang", "Duanduan Wan", "Meng Xiao"],
-		"info": ["arXiv preprint", "2309.16152"],
-		"year": 2023,
-		"month": "September",
-		"day": 28,
+		"info": ["Physical Review B", "109, L041102"],
+		"year": 2024,
+		"month": "January",
+		"day": 5,
 		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevB.109.L041102",
+			"pdf": "/pdf/li2024.pdf",
 			"arxiv": "https://arxiv.org/abs/2309.16152"
 		}
 	},
@@ -24,7 +26,7 @@ export const publications = {
 		"day": 30,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevApplied.20.L051001",
-			"pdf": "./pdf/long2023.pdf",
+			"pdf": "/pdf/long2023.pdf",
 			"arxiv": "https://arxiv.org/abs/2306.03850"
 		}
 	},
@@ -33,6 +35,7 @@ export const publications = {
 		"place": 41,
 		"label": "Editors' Suggestion",
 		"title": "Singular Topology of Scattering Matrices",
+		"abstract_short": "We present a systematic topological theory of the scattering matrix and reveal the topological nature of coherent perfect absorption and coherent perfect extinction ...",
 		"author": ["Cheng Guo+", "Jiazheng Li", "Meng Xiao", "Shanhui Fan+"],
 		"info": ["Physical Review B", "108, 155418"],
 		"year": 2023,
@@ -40,19 +43,45 @@ export const publications = {
 		"day": 17,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.108.155418",
-			"pdf": "./pdf/guo2023a.pdf"
+			"pdf": "/pdf/guo2023a.pdf"
 		},
-		"img": ["./image/guo2023a_fig4e.png", "white"],
-		"imgs": [
-			["./image/guo2023a_fig1d.png", "white"],
-			["./image/guo2023a_fig9a.png", "white"],
-			["./image/guo2023a_fig1b.png", "white"]
-		]
+		"img": ["/image/guo2023a_fig4e.png", "white"],
+		"imgs": {
+			// "fig4e": {
+			// 	"name": "Fig. 4(e)",
+			// 	"title": "",
+			// 	"abstract": "",
+			// 	"background": "white",
+			// 	"path": "/image/guo2023a_fig4e.png"
+			// },
+			"fig1d": {
+				"name": "Fig. 1(d)",
+				"title": "",
+				"abstract": "",
+				"background": "white",
+				"path": "/image/guo2023a_fig1d.png"
+			},
+			"fig9a": {
+				"name": "Fig. 9(a)",
+				"title": "",
+				"abstract": "",
+				"background": "white",
+				"path": "/image/guo2023a_fig9a.png"
+			},
+			"fig1b": {
+				"name": "Figure 1(b)",
+				"title": "",
+				"abstract": "",
+				"background": "white",
+				"path": "/image/guo2023a_fig1b.png"
+			}
+		}
 	},
 	"rt-guo2023b": {
 		"type": "article",
 		"place": 40,
 		"title": "Majorization Theory for Unitary Control of Optical Absorption and Emission",
+		"abstract_short": "We show that unitary control can achieve perfect violation or preservation of Kirchhoff's law in nonreciprocal objects, and uniform absorption or emission for any object ...",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["Physical Review Letters", "130, 146202"],
 		"year": 2023,
@@ -60,10 +89,10 @@ export const publications = {
 		"day": 7,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.130.146202",
-			"pdf": "./pdf/guo2023b.pdf",
-			"si": "./pdf/guo2023b_SI.pdf"
+			"pdf": "/pdf/guo2023b.pdf",
+			"si": "/pdf/guo2023b_SI.pdf"
 		},
-		"img": ["./image/guo2023b_fig3.png", "white"]
+		"img": ["/image/guo2023b_fig3.png", "white"]
 	},
 	"rt-ghanekar2022": {
 		"type": "article",
@@ -76,7 +105,7 @@ export const publications = {
 		"day": 30,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acsphotonics.2c01411",
-			"pdf": "./pdf/ghanekar2022.pdf"
+			"pdf": "/pdf/ghanekar2022.pdf"
 		}
 	},
 	"rt-he2022": {
@@ -90,14 +119,15 @@ export const publications = {
 		"day": 11,
 		"resource": {
 			"doi": "https://doi.org/10.1002/lpor.202100634",
-			"pdf": "./pdf/he2022.pdf"
+			"pdf": "/pdf/he2022.pdf"
 		}
 	},
 	"rt-guo2022b": {
 		"type": "article",
 		"place": 37,
 		"title": "Reciprocity Constraints on Reflection",
-		"abstract": "Loretnz reciprocity is known to impose constraints on transmission, absorption, and emission. We reveal reciprocity constraints on reflection ...",
+		"title_short": "Reciprocity Constraints on Reflection",
+		"abstract_short": "Loretnz reciprocity is known to impose constraints on transmission, absorption, and emission. We reveal reciprocity constraints on reflection ...",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["Physical Review Letters", "128, 256101"],
 		"year": 2022,
@@ -105,16 +135,17 @@ export const publications = {
 		"day": 21,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.128.256101",
-			"pdf": "./pdf/guo2022b.pdf",
-			"si": "./pdf/guo2022b_SI.pdf"
+			"pdf": "/pdf/guo2022b.pdf",
+			"si": "/pdf/guo2022b_SI.pdf"
 		},
-		"img": ["./image/guo2022b_fig5.png", "white"]
+		"img": ["/image/guo2022b_fig5.png", "white"]
 	},
 	"rt-guo2022a": {
 		"type": "article",
 		"place": 36,
 		"title": "Adjoint Kirchhoff's Law and General Symmetry Implications for All Thermal Emitters",
-		"abstract": "We study the relation between angular spectral absorptivity and emissivity for any thermal emitter using Shubnikov groups ...",
+		"title_short": "Adjoint Kirchhoff's Law of Thermal Radiation",
+		"abstract_short": "We study the relation between angular spectral absorptivity and emissivity for any thermal emitter using Shubnikov groups ...",
 		"author": ["Cheng Guo+", "Bo Zhao", "Shanhui Fan+"],
 		"info": ["Physical Review X", "12, 021023"],
 		"year": 2022,
@@ -122,9 +153,9 @@ export const publications = {
 		"day": 28,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevX.12.021023",
-			"pdf": "./pdf/guo2022a.pdf"
+			"pdf": "/pdf/guo2022a.pdf"
 		},
-		"img": ["./image/guo2022a_fig6.png", "dark"]
+		"img": ["/image/guo2022a_fig6.png", "dark"]
 	},
 	"rt-wang2022": {
 		"type": "article",
@@ -137,14 +168,15 @@ export const publications = {
 		"day": 9,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acsphotonics.1c02005",
-			"pdf": "./pdf/wang2022.pdf"
+			"pdf": "/pdf/wang2022.pdf"
 		}
 	},
 	"rt-guo2022": {
 		"type": "article",
 		"place": 34,
 		"title": "Internal Transformations and Internal Symmetries in Linear Photonic Systems",
-		"abstract": "We provide a unified theory of reciprocity, energy conservation, and time-reversal symmetry from the perspective of internal symmetry ...",
+		"title_short": "Internal Symmetries of Linear Photonic System",
+		"abstract_short": "We provide a unified theory of reciprocity, energy conservation, and time-reversal symmetry from the perspective of internal symmetry ...",
 		"author": ["Cheng Guo+", "Zhexin Zhao", "Shanhui Fan+"],
 		"info": ["Physical Review A", "105, 023509"],
 		"year": 2022,
@@ -152,9 +184,9 @@ export const publications = {
 		"day": 14,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevA.105.023509",
-			"pdf": "./pdf/guo2022.pdf"
+			"pdf": "/pdf/guo2022.pdf"
 		},
-		"img": ["./image/guo2022_fig3.png", "white"]
+		"img": ["/image/guo2022_fig3.png", "white"]
 	},
 	"rt-long2022": {
 		"type": "article",
@@ -167,7 +199,7 @@ export const publications = {
 		"day": 9,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevApplied.17.024029",
-			"pdf": "./pdf/long2022.pdf"
+			"pdf": "/pdf/long2022.pdf"
 		}
 	},
 	"rt-zhao2021a": {
@@ -181,7 +213,7 @@ export const publications = {
 		"day": 1,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevApplied.16.064001",
-			"pdf": "./pdf/zhao2021a.pdf"
+			"pdf": "/pdf/zhao2021a.pdf"
 		}
 	},
 	"rt-jin2021a": {
@@ -195,14 +227,15 @@ export const publications = {
 		"day": 1,
 		"resource": {
 			"doi": "https://doi.org/10.1063/5.0070422",
-			"pdf": "./pdf/jin2021a.pdf"
+			"pdf": "/pdf/jin2021a.pdf"
 		}
 	},
 	"rt-guo2021b": {
 		"type": "article",
 		"place": 30,
 		"title": "Generation of Guided Space-Time Wave Packets Using Multilevel Indirect Photonic Transitions in Integrated Photonics",
-		"abstract": "We generate guided space-time wave packets in a multimode waveguide using multilevel interband photonic transitions ...",
+		"title_short": "Guided Space-Time Wave Packets",
+		"abstract_short": "We generate guided space-time wave packets in a multimode waveguide using multilevel interband photonic transitions ...",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["Physical Review Research", "3, 033161"],
 		"year": 2021,
@@ -210,9 +243,9 @@ export const publications = {
 		"day": 17,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevResearch.3.033161",
-			"pdf": "./pdf/guo2021b.pdf"
+			"pdf": "/pdf/guo2021b.pdf"
 		},
-		"img": ["./image/guo2021b_fig4.png", "dark"]
+		"img": ["/image/guo2021b_fig4.png", "dark"]
 	},
 	"rt-park2021": {
 		"type": "article",
@@ -225,14 +258,15 @@ export const publications = {
 		"day": 6,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acsphotonics.1c00612",
-			"pdf": "./pdf/park2021.pdf"
+			"pdf": "/pdf/park2021.pdf"
 		}
 	},
 	"rt-guo2021": {
 		"type": "article",
 		"place": 28,
 		"title": "Structured 3D Linear Space-Time Light Bullets by Nonlocal Nanophotonics",
-		"abstract": "We generate 3D linear light bullets propagating in free space using a single passive nonlocal optical surface ...",
+		"title_short": "Light Bullet Generation with Metasurface",
+		"abstract_short": "We generate 3D linear light bullets propagating in free space using a single passive nonlocal optical surface ...",
 		"author": ["Cheng Guo", "Meng Xiao", "Meir Orenstein", "Shanhui Fan"],
 		"info": ["Light: Science & Applications", "10, 160"],
 		"year": 2021,
@@ -240,9 +274,9 @@ export const publications = {
 		"day": 2,
 		"resource": {
 			"doi": "https://doi.org/10.1038/s41377-021-00595-6",
-			"pdf": "./pdf/guo2021.pdf"
+			"pdf": "/pdf/guo2021.pdf"
 		},
-		"img": ["./image/guo2021_fig1.png", "dark"]
+		"img": ["/image/guo2021_fig1.png", "dark"]
 	},
 	"rt-song2021e": {
 		"type": "article",
@@ -255,7 +289,7 @@ export const publications = {
 		"day": 19,
 		"resource": {
 			"doi": "https://doi.org/10.1063/5.0056243",
-			"pdf": "./pdf/song2021e.pdf"
+			"pdf": "/pdf/song2021e.pdf"
 		}
 	},
 	"rt-long2021": {
@@ -269,7 +303,7 @@ export const publications = {
 		"day": 30,
 		"resource": {
 			"doi": "https://doi.org/10.1364/OL.430699",
-			"pdf": "./pdf/long2021.pdf"
+			"pdf": "/pdf/long2021.pdf"
 		}
 	},
 	"rt-wang2021g": {
@@ -283,7 +317,7 @@ export const publications = {
 		"day": 25,
 		"resource": {
 			"doi": "https://doi.org/10.1364/OPTICA.426460",
-			"pdf": "./pdf/wang2021g.pdf"
+			"pdf": "/pdf/wang2021g.pdf"
 		}
 	},
 	"rt-lou2021": {
@@ -297,14 +331,15 @@ export const publications = {
 		"day": 31,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.126.136101",
-			"pdf": "./pdf/lou2021.pdf"
+			"pdf": "/pdf/lou2021.pdf"
 		}
 	},
 	"rt-guo2021a": {
 		"type": "article",
 		"place": 23,
 		"title": "Wide Wavelength-Tunable Narrow-Band Thermal Radiation from Moiré Patterns",
-		"abstract": "We propose a wavelength-tunable narrow-band thermal emitters over a wide wavelength range based on the Moiré effect ...",
+		"title_short": "Tunable Thermal Emission from Moiré Patterns",
+		"abstract_short": "We propose a wavelength-tunable narrow-band thermal emitters over a wide wavelength range based on the Moiré effect ...",
 		"author": ["Cheng Guo", "Yu Guo", "Beicheng Lou", "Shanhui Fan"],
 		"info": ["Applied Physics Letters", "118, 131111"],
 		"year": 2021,
@@ -312,9 +347,9 @@ export const publications = {
 		"day": 29,
 		"resource": {
 			"doi": "https://doi.org/10.1063/5.0047308",
-			"pdf": "./pdf/guo2021a.pdf"
+			"pdf": "/pdf/guo2021a.pdf"
 		},
-		"img": ["./image/guo2021a_fig3.png", "dark"]
+		"img": ["/image/guo2021a_fig3.png", "dark"]
 	},
 	"rt-zhu2021a": {
 		"type": "article",
@@ -327,14 +362,15 @@ export const publications = {
 		"day": 29,
 		"resource": {
 			"doi": "https://doi.org/10.1038/s41467-021-20972-4",
-			"pdf": "./pdf/zhu2021a.pdf"
+			"pdf": "/pdf/zhu2021a.pdf"
 		}
 	},
 	"rt-guo2020c": {
 		"type": "article",
 		"place": 21,
 		"title": "Radiative Thermal Router Based on Tunable Magnetic Weyl Semimetals",
-		"abstract": "We demonstrate a radiative thermal router based on magnetic Weyl semimetals ...",
+		"title_short": "A Radiative Thermal Router Based on Weyl Semimetals",
+		"abstract_short": "We demonstrate a radiative thermal router based on magnetic Weyl semimetals ...",
 		"author": ["Cheng Guo", "Bo Zhao", "Danhong Huang", "Shanhui Fan"],
 		"info": ["ACS Photonics", "7, 3257"],
 		"year": 2020,
@@ -342,15 +378,16 @@ export const publications = {
 		"day": 19,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acsphotonics.0c01376",
-			"pdf": "./pdf/guo2020c.pdf"
+			"pdf": "/pdf/guo2020c.pdf"
 		},
-		"img": ["./image/guo2020c_fig0.png", "white"]
+		"img": ["/image/guo2020c_fig0.png", "white"]
 	},
 	"rt-guo2020b": {
 		"type": "article",
 		"place": 20,
 		"title": "Squeeze Free Space with Nonlocal Flat Optics",
-		"abstract": "We design an optical device that can replace free space of much larger thickness ...",
+		"title_short": "Squeeze Free Space with Nonlocal Flat Optics",
+		"abstract_short": "We design an optical device that can replace free space of much larger thickness ...",
 		"author": ["Cheng Guo", "Haiwen Wang", "Shanhui Fan"],
 		"info": ["Optica", "7, 1133"],
 		"year": 2020,
@@ -358,9 +395,9 @@ export const publications = {
 		"day": 3,
 		"resource": {
 			"doi": "https://doi.org/10.1364/OPTICA.392978",
-			"pdf": "./pdf/guo2020b.pdf"
+			"pdf": "/pdf/guo2020b.pdf"
 		},
-		"img": ["./image/guo2020b_fig1.png", "white"]
+		"img": ["/image/guo2020b_fig1.png", "white"]
 	},
 	"rt-asadchy2020b": {
 		"type": "article",
@@ -373,14 +410,15 @@ export const publications = {
 		"day": 2,
 		"resource": {
 			"doi": "https://doi.org/10.1002/lpor.202000151",
-			"pdf": "./pdf/asadchy2020b.pdf"
+			"pdf": "/pdf/asadchy2020b.pdf"
 		}
 	},
 	"rt-guo2020a": {
 		"type": "article",
 		"place": 18,
 		"title": "Theoretical Constraints on Reciprocal and Non-Reciprocal Many-Body Radiative Heat Transfer",
-		"abstract": "We study the constraints on reciprocal and non-reciprocal many-body radiative heat transfer imposed by symmetry and the second law of thermodynamics ...",
+		"title_short": "Schubnikov Group for Radiative Heat Transfer",
+		"abstract_short": "We study the constraints on reciprocal and non-reciprocal many-body radiative heat transfer imposed by symmetry and the second law of thermodynamics ...",
 		"author": ["Cheng Guo", "Shanhui Fan"],
 		"info": ["Physical Review B", "102, 085401"],
 		"year": 2020,
@@ -388,15 +426,16 @@ export const publications = {
 		"day": 3,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.102.085401",
-			"pdf": "./pdf/guo2020a.pdf"
+			"pdf": "/pdf/guo2020a.pdf"
 		},
-		"img": ["./image/guo2020a_fig1.png", "white"]
+		"img": ["/image/guo2020a_fig1.png", "white"]
 	},
 	"rt-asadchy2020a": {
 		"type": "article",
 		"place": 17,
 		"title": "Sub-Wavelength Passive Optical Isolators Using Photonic Structures Based on Weyl Semimetals",
-		"abstract": "We design a compact optical isolator using magnetic Weyl semimetals ...",
+		"title_short": "Optical Isolators Based on Weyl Semimetals",
+		"abstract_short": "We design a compact optical isolator using magnetic Weyl semimetals ...",
 		"author": ["Viktar S. Asadchy*", "Cheng Guo*", "Bo Zhao", "Shanhui Fan"],
 		"info": ["Advanced Optical Materials", "8, 2000100"],
 		"year": 2020,
@@ -404,15 +443,16 @@ export const publications = {
 		"day": 25,
 		"resource": {
 			"doi": "https://doi.org/10.1002/adom.202000100",
-			"pdf": "./pdf/asadchy2020a.pdf"
+			"pdf": "/pdf/asadchy2020a.pdf"
 		},
-		"img": ["./image/asadchy2020a_fig2.png", "white"]
+		"img": ["/image/asadchy2020a_fig2.png", "white"]
 	},
 	"rt-zhao2020": {
 		"type": "article",
 		"place": 16,
 		"title": "Axion-Field-Enabled Nonreciprocal Thermal Radiation in Weyl Semimetals",
-		"abstract": "We design a nonreciprocal thermal emitter based on magnetic Weyl semimetals, which can strongly violate Kirchhoff's law without external magetic fields ...",
+		"title_short": "Nonreciprocal Thermal Radiation with Weyl Semimetals",
+		"abstract_short": "We design a nonreciprocal thermal emitter based on magnetic Weyl semimetals, which can strongly violate Kirchhoff's law without external magetic fields ...",
 		"author": ["Bo Zhao*", "Cheng Guo*", "Christina A. C. Garcia", "Prineha Narang", "Shanhui Fan"],
 		"info": ["Nano Letters", "20, 1923"],
 		"year": 2020,
@@ -420,15 +460,16 @@ export const publications = {
 		"day": 11,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acs.nanolett.9b05179",
-			"pdf": "./pdf/zhao2020.pdf"
+			"pdf": "/pdf/zhao2020.pdf"
 		},
-		"img": ["./image/zhao2020_fig0.png", "dark"]
+		"img": ["/image/zhao2020_fig0.png", "dark"]
 	},
 	"rt-guo2020": {
 		"type": "article",
 		"place": 15,
 		"title": "Meron Spin Textures in Momentum Space",
-		"abstract": "We show that a momentum-space meron spin texture for electromagnetic fields in free space can be generated by controlling the interaction of light with a photonic crystal slab having a nonzero Berry curvature ...",
+		"title_short": "Meron Spin Textures in Momentum Space",
+		"abstract_short": "We show that a momentum-space meron spin texture for electromagnetic fields in free space can be generated by controlling the interaction of light with a photonic crystal slab having a nonzero Berry curvature ...",
 		"author": ["Cheng Guo", "Meng Xiao", "Yu Guo", "Luqi Yuan", "Shanhui Fan"],
 		"info": ["Physical Review Letters", "124, 106103"],
 		"year": 2020,
@@ -436,9 +477,9 @@ export const publications = {
 		"day": 10,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.124.106103",
-			"pdf": "./pdf/guo2020.pdf"
+			"pdf": "/pdf/guo2020.pdf"
 		},
-		"img": ["./image/guo2020_fig4.png", "dark"]
+		"img": ["/image/guo2020_fig4.png", "dark"]
 	},
 	"rt-wang2020b": {
 		"type": "article",
@@ -451,14 +492,15 @@ export const publications = {
 		"day": 22,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acsphotonics.9b01465",
-			"pdf": "./pdf/wang2020b.pdf"
+			"pdf": "/pdf/wang2020b.pdf"
 		}
 	},
 	"rt-guo2019": {
 		"type": "article",
 		"place": 13,
 		"title": "Relation between Photon Thermal Hall Effect and Persistent Heat Current in Nonreciprocal Radiative Heat Transfer",
-		"abstract": "We study the relation between photon thermal Hall effect and the persistent heat current in radiative heat transfer ...",
+		"title_short": "Photon Thermal Hall Effect and Persistent Heat Current",
+		"abstract_short": "We study the relation between photon thermal Hall effect and the persistent heat current in radiative heat transfer ...",
 		"author": ["Cheng Guo", "Yu Guo", "Shanhui Fan"],
 		"info": ["Physical Review B", "100, 205416"],
 		"year": 2019,
@@ -466,9 +508,9 @@ export const publications = {
 		"day": 18,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.100.205416",
-			"pdf": "./pdf/guo2019.pdf"
+			"pdf": "/pdf/guo2019.pdf"
 		},
-		"img": ["./image/guo2019_fig2.png", "white"]
+		"img": ["/image/guo2019_fig2.png", "white"]
 	},
 	"rt-zhao2019a": {
 		"type": "article",
@@ -481,14 +523,15 @@ export const publications = {
 		"day": 193,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevA.99.033839",
-			"pdf": "./pdf/zhao2019a.pdf"
+			"pdf": "/pdf/zhao2019a.pdf"
 		}
 	},
 	"rt-guo2018b": {
 		"type": "article",
 		"place": 11,
 		"title": "Isotropic Wavevector Domain Image Filters by a Photonic Crystal Slab Device",
-		"abstract": "We show that several types of isotropic image filters in the wavevector domain can be implemented with a single photonic crystal slab device ...",
+		"title_short": "Isotropic Wavevector Domain Image Filters",
+		"abstract_short": "We show that several types of isotropic image filters in the wavevector domain can be implemented with a single photonic crystal slab device ...",
 		"author": ["Cheng Guo", "Meng Xiao", "Momchil Minkov", "Yu Shi", "Shanhui Fan"],
 		"info": ["JOSA A", "35, 1685"],
 		"year": 2018,
@@ -496,15 +539,16 @@ export const publications = {
 		"day": 13,
 		"resource": {
 			"doi": "https://doi.org/10.1364/JOSAA.35.001685",
-			"pdf": "./pdf/guo2018b.pdf"
+			"pdf": "/pdf/guo2018b.pdf"
 		},
-		"img": ["./image/guo2018b_fig5.png", "white"]
+		"img": ["/image/guo2018b_fig5.png", "white"]
 	},
 	"rt-liu2018c": {
 		"type": "article",
 		"place": 10,
 		"title": "Enhanced High-Harmonic Generation from an All-Dielectric Metasurface",
-		"abstract": "We report enhanced non-perturbative highharmonic emission from a Fano-resonant Si metasurface ...",
+		"title_short": "Enhanced High-Harmonic Generation from Metasurface",
+		"abstract_short": "We report enhanced non-perturbative highharmonic emission from a Fano-resonant Si metasurface ...",
 		"author": ["Hanzhe Liu*", "Cheng Guo*", "Giulio Vampa", "Jingyuan Linda Zhang", "Tomas Sarmiento", "Meng Xiao", "Philip H. Bucksbaum", "Jelena Vučković", "Shanhui Fan", "David A. Reis"],
 		"info": ["Nature Physics", "14, 1006"],
 		"year": 2018,
@@ -512,15 +556,16 @@ export const publications = {
 		"day": 6,
 		"resource": {
 			"doi": "https://doi.org/10.1038/s41567-018-0233-6",
-			"pdf": "./pdf/liu2018c.pdf"
+			"pdf": "/pdf/liu2018c.pdf"
 		},
-		"img": ["./image/liu2018c_fig2.png", "white"]
+		"img": ["/image/liu2018c_fig2.png", "white"]
 	},
 	"rt-guo2018a": {
 		"type": "article",
 		"place": 9,
 		"title": "Photonic Crystal Slab Laplace Operator for Image Differentiation",
-		"abstract": "We implement isotropic optical edge detection with a photonic crystal slab device ...",
+		"title_short": "Photonic Crystal Slab Laplace Operator",
+		"abstract_short": "We implement isotropic optical edge detection with a photonic crystal slab device ...",
 		"author": ["Cheng Guo", "Meng Xiao", "Momchil Minkov", "Yu Shi", "Shanhui Fan"],
 		"info": ["Optica", "5, 251"],
 		"year": 2018,
@@ -528,9 +573,9 @@ export const publications = {
 		"day": 27,
 		"resource": {
 			"doi": "https://doi.org/10.1364/OPTICA.5.000251",
-			"pdf": "./pdf/guo2018a.pdf"
+			"pdf": "/pdf/guo2018a.pdf"
 		},
-		"img": ["./image/guo2018a_fig2.png", "dark"]
+		"img": ["/image/guo2018a_fig2.png", "dark"]
 	},
 	"rt-zheng2017": {
 		"type": "article",
@@ -543,7 +588,7 @@ export const publications = {
 		"day": 8,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.119.196403",
-			"pdf": "./pdf/zheng2017.pdf"
+			"pdf": "/pdf/zheng2017.pdf"
 		}
 	},
 	"rt-zhang2017b": {
@@ -557,7 +602,7 @@ export const publications = {
 		"day": 10,
 		"resource": {
 			"doi": "https://doi.org/10.1038/nphys4183",
-			"pdf": "./pdf/zhang2017b.pdf"
+			"pdf": "/pdf/zhang2017b.pdf"
 		}
 	},
 	"rt-komatsu2017": {
@@ -571,7 +616,7 @@ export const publications = {
 		"day": 3,
 		"resource": {
 			"doi": "https://doi.org/10.1002/adfm.201606022",
-			"pdf": "./pdf/komatsu2017.pdf"
+			"pdf": "/pdf/komatsu2017.pdf"
 		}
 	},
 	"rt-xu2016b": {
@@ -585,7 +630,7 @@ export const publications = {
 		"day": 1,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.116.096801",
-			"pdf": "./pdf/xu2016b.pdf"
+			"pdf": "/pdf/xu2016b.pdf"
 		}
 	},
 	"rt-belopolski2016": {
@@ -599,7 +644,7 @@ export const publications = {
 		"day": 10,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevLett.116.066802",
-			"pdf": "./pdf/belopolski2016.pdf"
+			"pdf": "/pdf/belopolski2016.pdf"
 		}
 	},
 	"rt-zheng2016": {
@@ -613,7 +658,7 @@ export const publications = {
 		"day": 8,
 		"resource": {
 			"doi": "https://doi.org/10.1021/acsnano.5b06807",
-			"pdf": "./pdf/zheng2016.pdf"
+			"pdf": "/pdf/zheng2016.pdf"
 		}
 	},
 	"rt-xu2015b": {
@@ -627,7 +672,7 @@ export const publications = {
 		"day": 13,
 		"resource": {
 			"doi": "https://doi.org/10.1126/sciadv.1501092",
-			"pdf": "./pdf/xu2015b.pdf"
+			"pdf": "/pdf/xu2015b.pdf"
 		}
 	},
 	"rt-zhang2015e": {
@@ -641,7 +686,7 @@ export const publications = {
 		"day": 20,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.92.041203",
-			"pdf": "./pdf/zhang2015e.pdf"
+			"pdf": "/pdf/zhang2015e.pdf"
 		}
 	},
 	"rv-shen2022": {
@@ -655,7 +700,7 @@ export const publications = {
 		"day": 4,
 		"resource": {
 			"doi": "https://doi.org/10.1088/2040-8986/ace4dc",
-			"pdf": "./pdf/shen2022.pdf",
+			"pdf": "/pdf/shen2022.pdf",
 			"arxiv": "https://arxiv.org/abs/2210.11273"
 		}
 	},
@@ -663,6 +708,7 @@ export const publications = {
 		"type": "review",
 		"place": 2,
 		"title": "Light Control with Weyl Semimetals",
+		"abstract_short": "We review the basic concepts and optical responses of Weyl semimetals, and survey their applications in optics and thermal photonics ...",
 		"author": ["Cheng Guo*+", "Viktar S. Asadchy*", "Bo Zhao*", "Shanhui Fan+"],
 		"info": ["eLight", "3, 2"],
 		"year": 2023,
@@ -670,9 +716,9 @@ export const publications = {
 		"day": 4,
 		"resource": {
 			"doi": "https://doi.org/10.1186/s43593-022-00036-w",
-			"pdf": "./pdf/guo2023.pdf"
+			"pdf": "/pdf/guo2023.pdf"
 		},
-		"img": ["./image/guo2023_cover.png", "dark"]
+		"img": ["/image/guo2023_cover.png", "dark"]
 	},
 	"rv-guo2022c": {
 		"type": "review",
@@ -685,7 +731,7 @@ export const publications = {
 		"day": 2,
 		"resource": {
 			"doi": "https://doi.org/10.1186/s43593-022-00025-z",
-			"pdf": "./pdf/guo2022c.pdf"
+			"pdf": "/pdf/guo2022c.pdf"
 		}
 	},
 	"bk-guo2019a": {
@@ -700,7 +746,7 @@ export const publications = {
 		"day": 14,
 		"resource": {
 			"doi": "https://doi.org/10.1016/bs.semsem.2019.02.001",
-			"pdf": "./pdf/guo2019a.pdf"
+			"pdf": "/pdf/guo2019a.pdf"
 		}
 	},
 	"pt-guo2021c": {
@@ -714,7 +760,7 @@ export const publications = {
 		"day": 23,
 		"resource": {
 			"url": "https://patents.google.com/patent/US10928551B2/en",
-			"pdf": "./pdf/US10928551.pdf"
+			"pdf": "/pdf/US10928551.pdf"
 		}
 	}
 }

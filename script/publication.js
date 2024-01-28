@@ -1,9 +1,7 @@
-// import publications from "../asset/publication.json" assert {type: "json"};
-import { publications } from "../asset/publications.js";
-import { setFooter, setNavbar, createTitle } from "./module/utils.js";
-
-const publication_types = ["article", "review", "book", "patent"];
-
+// import publications from "/asset/publication.json" assert {type: "json"};
+import { publications } from "/asset/publications.js";
+import { setFooter, setNavbar, createTitle } from "./utils.js";
+import { publication_types } from "/asset/content.js";
 
 function createAuthor (author_list) {
     // Parse and author list and create a node
@@ -77,7 +75,6 @@ function createAuthor (author_list) {
     
 }
 
-
 function main () {
 
     setNavbar("PUBLICATION");
@@ -143,19 +140,23 @@ function main () {
         div_inner.setAttribute("class", "me-2");
         div_outer.appendChild(div_inner);
     
-        let p_title = document.createElement("p");
-        p_title.setAttribute("class", "fw-bold");
-        p_title.textContent = publication.title; 
-        div_inner.appendChild(p_title);
+        let title_wrap = document.createElement("p");
+        div_inner.appendChild(title_wrap);
+
+        let title = document.createElement("span");
+        title.setAttribute("class", "fw-bold");
+        title.textContent = publication.title;
+        title_wrap.appendChild(title);
 
         if (publication.label) {
 
-            p_title.textContent += "\xa0\xa0\xa0";
+            title.textContent += "\xa0\xa0\xa0";
 
             let label = document.createElement("div");
-            label.setAttribute("class", "badge bg-color-light");
+            // label.setAttribute("class", "badge bg-color-light");
+            label.setAttribute("class", "d-inline-block label-light-inv label-size");
             label.textContent = publication.label;
-            p_title.append(label)
+            title_wrap.append(label)
 
         }
 
@@ -163,7 +164,7 @@ function main () {
         a_headerlink.setAttribute("class", "headerlink");
         a_headerlink.setAttribute("href", "#" + id);
         a_headerlink.textContent = "#";
-        p_title.appendChild(a_headerlink);
+        title_wrap.appendChild(a_headerlink);
 
         if (publication.subtitle) {
             let p_subtitle = document.createElement("p");
@@ -189,7 +190,7 @@ function main () {
         p_info.appendChild(number);
     
         let time = document.createElement("span");
-        time.setAttribute("class", "me-2 nobr");
+        time.setAttribute("class", "me-3 nobr");
         time.textContent = " " + publication.month.substring(0, 3) + " " + publication.year;
         p_info.appendChild(time);
     
@@ -200,19 +201,19 @@ function main () {
         for (let [link_name, link] of Object.entries(publication.resource)) {
 
             let a = document.createElement("a");
-            a.setAttribute("class", "color-subtheme text-decoration-none me-2");
+            a.setAttribute("class", "button-subtheme label-size text-decoration-none me-2");
             a.setAttribute("href", link);
             a.setAttribute("target", "_blank");
             a.setAttribute("rel", "noopener");
             resource.appendChild(a);
 
             let img_src = "./icon/doi.svg";
-            let img_height = 12;
+            let img_height = 10;
             switch (link_name) {
                 case "pdf":
                     link_name = "PDF";
                     img_src = "./icon/pdf.svg";
-                    img_height = 12.5;
+                    // img_height = 10.5;
                     a.removeAttribute("rel");
                     break;
                 case "arxiv":
@@ -221,18 +222,21 @@ function main () {
                 case "si":
                     link_name = "SI";
                     img_src = "./icon/si.svg";
-                    img_height = 12.5;
+                    // img_height = 10.5;
                     a.removeAttribute("rel");
                     break;
             }
 
-            a.textContent = " " + link_name + " ";
+            // a.textContent = " " + link_name + " ";
 
             let img = document.createElement("img");
-            img.setAttribute("class", "mb-1");
+            img.setAttribute("class", "img-filter-subtheme mb-1");
             img.setAttribute("src", img_src);
             img.setAttribute("height", img_height);
             a.appendChild(img);
+
+            let a_text = document.createTextNode(" " + link_name);
+            a.appendChild(a_text);
 
         }
 
@@ -287,7 +291,7 @@ function main () {
             div_outer.appendChild(img_box_outer);
 
             let img_box = document.createElement("div");
-            img_box.setAttribute("class", "img-box" + (publication.img[1]=="white" ? " img-box-white" : ""));
+            img_box.setAttribute("class", "overflow-hidden" + (publication.img[1]=="white" ? " img-box-white" : ""));
             img_box_outer.appendChild(img_box);
     
             let img = document.createElement("img");

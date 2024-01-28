@@ -1,6 +1,6 @@
-import { setFooter, setNavbar, createTitle } from "./module/utils.js";
-import { publications } from "../asset/publications.js";
-import { events } from "../asset/events.js";
+import { setFooter, setNavbar, createTitle } from "/script/utils.js";
+import { events } from "/asset/events.js";
+import { logos } from "/asset/resources.js";
 
 function main () {
 
@@ -14,12 +14,27 @@ function main () {
 
     container.appendChild(createTitle("News"));
 
+    // timeline: all events
+    // event_div: one event
+    // - timeline_header: date, location (moved to timeline_name under title_wrap on <= small screen)
+    // - line: vertical line divider (only display on >=medium screen)
+    // - timeline_main: main event content, including:
+    //   - title_wrap: organizer logo, title
+    //   - (timeline_header: when <= small screen)
+    //   - type_wrap: event type, label
+    //   - abstract: if any
+    //   - info and link: additional info, resources or links
+
     let timeline = document.createElement("div");
     container.appendChild(timeline);
 
     // let current_year = (new Date().getFullYear());
     let count = 0;
     for (let [id, event] of Object.entries(events)) { 
+
+        if (event.display == false) {
+            continue;
+        }
 
         count += 1;
         let parity = (count %2 == 1) ? "odd" : "even";
@@ -51,33 +66,30 @@ function main () {
         event_div.setAttribute("class", "timeline");
         timeline.appendChild(event_div);
 
+        // Add horizontal divider for small screen
+        // let hr = document.createElement("hr");
+        // hr.setAttribute("class", "color-light d-md-none");
+        // event_div.appendChild(hr);
+
+        // timeline_header
+
         let timeline_header = document.createElement("div");
-        timeline_header.setAttribute("class", "timeline-header " + parity);
+        timeline_header.setAttribute("class", "d-none d-md-block timeline-header " + parity);
         event_div.appendChild(timeline_header);
 
         let date = document.createElement("div");
-        date.setAttribute("class", "fw-bold color-light d-none d-md-block"); 
-        date.setAttribute("id", "date");
+        date.setAttribute("class", "fw-bold color-theme");
         date.textContent = event.day + " " + event.month.substring(0, 3).toLocaleUpperCase() + " " + event.year;
         timeline_header.appendChild(date);
 
-        let type_wrap = document.createElement("div");
-        type_wrap.setAttribute("class", "d-none d-md-block");
-        type_wrap.setAttribute("id", "type-wrap");
-        timeline_header.appendChild(type_wrap);
-
-        let type = document.createElement("div");
-        type.setAttribute("class", "fw-bold fs-smaller color-subtheme");
-        type.setAttribute("id", "type");
-        type.textContent = event.type.toUpperCase();
-        type_wrap.appendChild(type);
-
-        if (event.label != null) {
-            let label = document.createElement("div");
-            label.setAttribute("class", "badge bg-color-light fs-smaller");
-            label.textContent = event.label;
-            type_wrap.appendChild(label);
+        if (event.location != null) {
+            let location = document.createElement("div");
+            location.setAttribute("class", "fw-bold color-theme");
+            location.textContent = event.location;
+            timeline_header.appendChild(location);
         }
+
+        // line
 
         let line = document.createElement("div");
         line.setAttribute("class", "vertical-line d-none d-md-block");
@@ -87,95 +99,112 @@ function main () {
         dot.setAttribute("class", "dot");
         line.appendChild(dot);
 
+        // timeline_main
+
         let timeline_main = document.createElement("div");
-        timeline_main.setAttribute("class", "timeline-main mb-5 " + parity);
+        timeline_main.setAttribute("class", "timeline-main mb-0 mb-md-5 " + parity);
         event_div.appendChild(timeline_main);
 
-        let hr_main = document.createElement("hr");
-        hr_main.setAttribute("class", "color-light mt-0 d-none d-lg-block");
-        timeline_main.appendChild(hr_main);
+        // Add horizontal divider for timeline_main on large screen
+        // let hr_main = document.createElement("hr");
+        // hr_main.setAttribute("class", "color-light mt-0 d-none d-lg-block");
+        // timeline_main.appendChild(hr_main);
+
+        // timeline_main / title_wrap
 
         let title_wrap = document.createElement("div");
         title_wrap.setAttribute("class", "row mb-3");
         timeline_main.appendChild(title_wrap);
 
         let img_box_outer = document.createElement("a");
-        img_box_outer.setAttribute("class", "col-12 col-md-4 order-first"  + ((parity=="even") ? " order-lg-last" : ""));
+        img_box_outer.setAttribute("class", "col-12 col-md-4 order-first mb-3"  + ((parity=="even") ? " order-lg-last" : ""));
         title_wrap.appendChild(img_box_outer);
 
-        let img_obj = publications[event.publication[0]].img;
-
         let img_box = document.createElement("div");
-        img_box.setAttribute("class", "img-box" + (img_obj[1]=="white" ? " img-box-white" : ""));
+        img_box.setAttribute("class", "overflow-hidden img-box-white img-size-news p-3 d-flex justify-content-center align-items-center");
         img_box_outer.appendChild(img_box);
 
         let img = document.createElement("img");
-        img.setAttribute("src", img_obj[0]);
-        img.setAttribute("class", "img-link w-100 img-fit-" + img_obj[1]);
+        img.setAttribute("src", logos[event.organizer]);
+        // img.setAttribute("height", 50)
+        img.setAttribute("class", "w-100 img-fit-white");
         img_box.appendChild(img);
 
-        let timeline_header_sm = timeline_header.cloneNode(true);
-        timeline_header_sm.setAttribute("class", "col-12 d-flex d-md-none justify-content-between my-3");
-        title_wrap.appendChild(timeline_header_sm);
-
-        let date_sm = timeline_header_sm.querySelector("#date");
-        date_sm.setAttribute("class", "fw-bold color-light fs-smaller")
-
-        let type_wrap_sm = timeline_header_sm.querySelector("#type-wrap");
-        type_wrap_sm.setAttribute("class", "d-flex fs-6 order-first");
-
-        let type_sm = type_wrap_sm.querySelector("#type");
-        type_sm.setAttribute("class", "fw-bold fs-smaller color-subtheme order-last")
-        
-        let label_sm = type_wrap_sm.querySelector(".badge");
-        if (label_sm != null) {
-            label_sm.setAttribute("class", "badge bg-color-light fs-smaller order-first");
-            type_sm.textContent = "\xa0\xa0\xa0" + type_sm.textContent;
-        }
-
-        let title = document.createElement("a");
-        title.setAttribute("class", "fs-4 fw-bold text-link col-12 col-md-8");
-        title.setAttribute("href", event.info[0][1]);
-        title.setAttribute("target", "_blank");
-        title.setAttribute("rel", "noopener");
+        let title = document.createElement("p");
+        title.setAttribute("class", "fs-5 fw-bold col-12 col-md-8");
         title.textContent = event.title;
         title_wrap.appendChild(title);
 
-        let abstract = document.createElement("p");
-        abstract.setAttribute("class", "fs-5")
-        abstract.textContent = event.abstract;
-        timeline_main.appendChild(abstract);
+        // timeline_header for <= small screen
 
-        let info = document.createElement("p");
-        info.setAttribute("class", "fw-bold color-light");
-        timeline_main.appendChild(info);
+        let timeline_header_sm = timeline_header.cloneNode(true);
+        timeline_header_sm.setAttribute("class", "d-flex d-md-none justify-content-between my-3");
+        timeline_main.appendChild(timeline_header_sm);
 
-        let count_link = 0;
-        for (let item of event.info) {
+        // timeline_main / type_wrap
 
-            count_link += 1;
+        let type_wrap = document.createElement("div");
+        type_wrap.setAttribute("class", "d-flex justify-content-between justify-content-md-start mb-3" + ((parity=="even") ? " flex-lg-row-reverse" : ""));
+        timeline_main.appendChild(type_wrap);
 
-            let a = document.createElement("a");
-            a.setAttribute("class", "text-link");
-            a.setAttribute("href", item[1]);
-            a.setAttribute("target", "_blank");
-            a.setAttribute("rel", "noopener");
-            a.textContent = item[0];
-            info.appendChild(a);
+        let type = document.createElement("div");
+        type.setAttribute("class", "fw-bold color-light me-3" + ((parity=="even") ? " me-lg-0 ms-lg-3" : ""));
+        // type.setAttribute("class", "label-light-inv label-size me-3" + ((parity=="even") ? " me-lg-0 ms-lg-3" : ""));
+        type.textContent = event.type.toUpperCase();
+        type_wrap.appendChild(type);
 
-            if (count_link < (event.info.length)) {
-                let span = document.createElement("span");
-                span.textContent = "\xa0\xa0\xa0|\xa0\xa0\xa0";
-                info.appendChild(span);
+        if (event.label != null) {
+            let label = document.createElement("div");
+            // label.setAttribute("class", "badge bg-color-light fs-smaller");
+            label.setAttribute("class", "label-light label-size");
+            label.textContent = event.label;
+            type_wrap.appendChild(label);
+        }
+
+        if (event.abstract != null) {
+            let abstract = document.createElement("p");
+            abstract.textContent = event.abstract;
+            timeline_main.appendChild(abstract);
+        }
+
+        if (event.info != null) {
+            let info = document.createElement("p");
+            info.setAttribute("class", "fw-bold color-light");
+            info.textContent = event.info;
+            timeline_main.appendChild(info);
+        }
+
+        if (event.link != null) {
+
+            let links = document.createElement("p");
+            links.setAttribute("class", "fw-bold color-subtheme");
+            timeline_main.appendChild(links);
+
+            let count_link = 0;
+            for (let item of event.link) {
+
+                count_link += 1;
+
+                let a = document.createElement("a");
+                a.setAttribute("class", "text-link-hover");
+                a.setAttribute("href", item[1]);
+                a.setAttribute("target", "_blank");
+                a.setAttribute("rel", "noopener");
+                a.textContent = item[0];
+                links.appendChild(a);
+
+                if (count_link < (event.link.length)) {
+                    let span = document.createElement("span");
+                    span.textContent = "\xa0\xa0\xa0|\xa0\xa0\xa0";
+                    links.appendChild(span);
+                }
+
             }
 
         }
 
-        timeline_main.appendChild(hr_main.cloneNode(true));
-
-        // let hr = document.createElement("hr");
-        // hr.setAttribute("class", "color-light d-md-none mb-5");
-        // event_div.appendChild(hr);
+        // Add horizontal divider (bottom) for timeline_main on large screen
+        // timeline_main.appendChild(hr_main.cloneNode(true));
 
     }
 
