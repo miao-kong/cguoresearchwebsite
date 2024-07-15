@@ -113,11 +113,11 @@ function main () {
         // timeline_main / title_wrap
 
         let title_wrap = document.createElement("div");
-        title_wrap.setAttribute("class", "row mb-3");
+        title_wrap.setAttribute("class", "row mb-md-3");
         timeline_main.appendChild(title_wrap);
 
         let img_box_outer = document.createElement("a");
-        img_box_outer.setAttribute("class", "col-12 col-md-4 order-first mb-3"  + ((parity=="even") ? " order-lg-last" : ""));
+        img_box_outer.setAttribute("class", "col-12 col-md-4 order-first"  + ((parity=="even") ? " order-lg-last" : ""));
         title_wrap.appendChild(img_box_outer);
 
         let img_box = document.createElement("div");
@@ -130,16 +130,17 @@ function main () {
         img.setAttribute("class", "w-100 img-fit-white");
         img_box.appendChild(img);
 
-        let title = document.createElement("p");
-        title.setAttribute("class", "fs-5 fw-bold col-12 col-md-8");
-        title.textContent = event.title;
-        title_wrap.appendChild(title);
-
         // timeline_header for <= small screen
 
         let timeline_header_sm = timeline_header.cloneNode(true);
         timeline_header_sm.setAttribute("class", "d-flex d-md-none justify-content-between my-3");
-        timeline_main.appendChild(timeline_header_sm);
+        title_wrap.appendChild(timeline_header_sm);
+
+
+        let title = document.createElement("p");
+        title.setAttribute("class", "fs-5 fw-bold col-12 col-md-8");
+        title.textContent = event.title;
+        title_wrap.appendChild(title);
 
         // timeline_main / type_wrap
 

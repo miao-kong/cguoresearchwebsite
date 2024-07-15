@@ -77,50 +77,35 @@ function main () {
         gallery_wrapper.appendChild(gallery);
 
         let img_cnt = 0;
-        let img_threshold = 6;
+        let img_threshold = 6; // maximum number images to include in each gallery
 
+        // add the main image of each publication to gallery
         for (let id of research.publication) {
-
             let paper = publications[id];
-
-            if (paper.img != null) {
-
-                gallery.appendChild(createGalleryCard(paper.img[0], paper.title, paper.abstract_short, "/publication.html#" + id));
-
+            if ((paper.img_index != null) && (paper.img_index.main != null)) {
+                let img_id = paper.img_index.main;
+                gallery.appendChild(createGalleryCard(paper.img[img_id].path, paper.title, paper.abstract_short, "/publication.html#" + id));
                 img_cnt += 1;
-
             }
-
         }
 
+        // add the other images of each publication to gallery
         if (img_cnt < img_threshold) {
-
             for (let id of research.publication) {
-
                 let paper = publications[id];
-
-                if (paper.imgs != null) {
-
-                    for (let [img_id, item] of Object.entries(paper.imgs)) {
-
-                        gallery.appendChild(createGalleryCard(item.path, paper.title, paper.abstract_short, "/publication.html#" + id));
-
+                if ((paper.img_index != null) && (paper.img_index.other != null)) {
+                    for (let img_id of paper.img_index.other) {
+                        gallery.appendChild(createGalleryCard(paper.img[img_id].path, paper.title, paper.abstract_short, "/publication.html#" + id));
                         img_cnt += 1;
-
                         if (img_cnt >= img_threshold) {
                             break;
                         }
-
                     }
-
                 }
-
                 if (img_cnt >= img_threshold) {
                     break;
                 }
-
             }
-
         }
 
         let forward_button = document.createElement("img");

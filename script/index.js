@@ -85,6 +85,7 @@ function main () {
     for (let [id, research_area] of Object.entries(research_interest)) {
 
         let publication = publications[research_area.publication[0]];
+        let img_src = publication.img[publication.img_index.main];
 
         let card = document.createElement("a");
         card.setAttribute("class", "card h-100 border-0 text-decoration-none text-reset mb-5");
@@ -100,12 +101,12 @@ function main () {
         row.appendChild(card_img_outer);
 
         let card_img_box = document.createElement("div");
-        card_img_box.setAttribute("class", "overflow-hidden" + (publication.img[1]=="white" ? " img-box-white" : ""));
+        card_img_box.setAttribute("class", "overflow-hidden" + (img_src.background=="white" ? " img-box-white" : ""));
         card_img_outer.appendChild(card_img_box);
 
         let card_img = document.createElement("img");
-        card_img.setAttribute("class", "img-size-area img-fit-" + publication.img[1]);
-        card_img.setAttribute("src", publication.img[0]);
+        card_img.setAttribute("class", "img-size-area img-fit-" + img_src.background);
+        card_img.setAttribute("src", img_src.path);
         card_img_box.appendChild(card_img);
 
         let card_body = document.createElement("div");

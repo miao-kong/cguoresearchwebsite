@@ -45,33 +45,28 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevB.108.155418",
 			"pdf": "/pdf/guo2023a.pdf"
 		},
-		"img": ["/image/guo2023a_fig4e.png", "white"],
-		"imgs": {
-			// "fig4e": {
-			// 	"name": "Fig. 4(e)",
-			// 	"title": "",
-			// 	"abstract": "",
-			// 	"background": "white",
-			// 	"path": "/image/guo2023a_fig4e.png"
-			// },
+		"img_index": {
+			"main": "fig4e",
+			"other": ["fig1d", "fig9a", "fig1b"]
+		},
+		"img": {
+			"fig4e": {
+				"name": "Fig. 4(e)",
+				"background": "white",
+				"path": "/image/guo2023a_fig4e.png"
+			},
 			"fig1d": {
 				"name": "Fig. 1(d)",
-				"title": "",
-				"abstract": "",
 				"background": "white",
 				"path": "/image/guo2023a_fig1d.png"
 			},
 			"fig9a": {
 				"name": "Fig. 9(a)",
-				"title": "",
-				"abstract": "",
 				"background": "white",
 				"path": "/image/guo2023a_fig9a.png"
 			},
 			"fig1b": {
 				"name": "Figure 1(b)",
-				"title": "",
-				"abstract": "",
 				"background": "white",
 				"path": "/image/guo2023a_fig1b.png"
 			}
@@ -92,7 +87,16 @@ export const publications = {
 			"pdf": "/pdf/guo2023b.pdf",
 			"si": "/pdf/guo2023b_SI.pdf"
 		},
-		"img": ["/image/guo2023b_fig3.png", "white"]
+		"img_index": {
+			"main": "fig3"
+		},
+		"img": {
+			"fig3": {
+				"name": "Fig. 3",
+				"background": "white",
+				"path": "/image/guo2023b_fig3.png"
+			}
+		}
 	},
 	"rt-ghanekar2022": {
 		"type": "article",
@@ -138,7 +142,16 @@ export const publications = {
 			"pdf": "/pdf/guo2022b.pdf",
 			"si": "/pdf/guo2022b_SI.pdf"
 		},
-		"img": ["/image/guo2022b_fig5.png", "white"]
+		"img_index": {
+			"main": "fig5"
+		},
+		"img": {
+			"fig5": {
+				"name": "Fig. 5",
+				"background": "white",
+				"path": "/image/guo2022b_fig5.png"
+			}
+		}
 	},
 	"rt-guo2022a": {
 		"type": "article",
@@ -155,7 +168,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevX.12.021023",
 			"pdf": "/pdf/guo2022a.pdf"
 		},
-		"img": ["/image/guo2022a_fig6.png", "dark"]
+		"img_index": {
+			"main": "fig6"
+		},
+		"img": {
+			"fig6": {
+				"name": "Fig. 6",
+				"background": "dark",
+				"path": "/image/guo2022a_fig6.png"
+			}
+		}
 	},
 	"rt-wang2022": {
 		"type": "article",
@@ -186,7 +208,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevA.105.023509",
 			"pdf": "/pdf/guo2022.pdf"
 		},
-		"img": ["/image/guo2022_fig3.png", "white"]
+		"img_index": {
+			"main": "fig3"
+		},
+		"img": {
+			"fig3": {
+				"name": "Fig. 3",
+				"background": "white",
+				"path": "/image/guo2022_fig3.png"
+			}
+		}
 	},
 	"rt-long2022": {
 		"type": "article",
@@ -245,7 +276,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevResearch.3.033161",
 			"pdf": "/pdf/guo2021b.pdf"
 		},
-		"img": ["/image/guo2021b_fig4.png", "dark"]
+		"img_index": {
+			"main": "fig4"
+		},
+		"img": {
+			"fig4": {
+				"name": "Fig. 4",
+				"background": "dark",
+				"path": "/image/guo2021b_fig4.png"
+			}
+		}
 	},
 	"rt-park2021": {
 		"type": "article",
@@ -276,7 +316,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1038/s41377-021-00595-6",
 			"pdf": "/pdf/guo2021.pdf"
 		},
-		"img": ["/image/guo2021_fig1.png", "dark"]
+		"img_index": {
+			"main": "fig1"
+		},
+		"img": {
+			"fig1": {
+				"name": "Fig. 1",
+				"background": "dark",
+				"path": "/image/guo2021_fig1.png"
+			}
+		}
 	},
 	"rt-song2021e": {
 		"type": "article",
@@ -349,7 +398,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1063/5.0047308",
 			"pdf": "/pdf/guo2021a.pdf"
 		},
-		"img": ["/image/guo2021a_fig3.png", "dark"]
+		"img_index": {
+			"main": "fig3"
+		},
+		"img": {
+			"fig3": {
+				"name": "Fig. 3",
+				"background": "dark",
+				"path": "/image/guo2021a_fig3.png"
+			}
+		}
 	},
 	"rt-zhu2021a": {
 		"type": "article",
@@ -380,7 +438,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1021/acsphotonics.0c01376",
 			"pdf": "/pdf/guo2020c.pdf"
 		},
-		"img": ["/image/guo2020c_fig0.png", "white"]
+		"img_index": {
+			"main": "fig0"
+		},
+		"img": {
+			"fig0": {
+				"name": "Figure in Abstract",
+				"background": "white",
+				"path": "/image/guo2020c_fig0.png"
+			}
+		}
 	},
 	"rt-guo2020b": {
 		"type": "article",
@@ -397,7 +464,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1364/OPTICA.392978",
 			"pdf": "/pdf/guo2020b.pdf"
 		},
-		"img": ["/image/guo2020b_fig1.png", "white"]
+		"img_index": {
+			"main": "fig1"
+		},
+		"img": {
+			"fig1": {
+				"name": "Fig. 1",
+				"background": "white",
+				"path": "/image/guo2020b_fig1.png"
+			}
+		}
 	},
 	"rt-asadchy2020b": {
 		"type": "article",
@@ -428,7 +504,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevB.102.085401",
 			"pdf": "/pdf/guo2020a.pdf"
 		},
-		"img": ["/image/guo2020a_fig1.png", "white"]
+		"img_index": {
+			"main": "fig1"
+		},
+		"img": {
+			"fig1": {
+				"name": "Fig. 1",
+				"background": "white",
+				"path": "/image/guo2020a_fig1.png"
+			}
+		}
 	},
 	"rt-asadchy2020a": {
 		"type": "article",
@@ -445,7 +530,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1002/adom.202000100",
 			"pdf": "/pdf/asadchy2020a.pdf"
 		},
-		"img": ["/image/asadchy2020a_fig2.png", "white"]
+		"img_index": {
+			"main": "fig2"
+		},
+		"img": {
+			"fig2": {
+				"name": "Fig. 2",
+				"background": "white",
+				"path": "/image/asadchy2020a_fig2.png"
+			}
+		}
 	},
 	"rt-zhao2020": {
 		"type": "article",
@@ -462,7 +556,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1021/acs.nanolett.9b05179",
 			"pdf": "/pdf/zhao2020.pdf"
 		},
-		"img": ["/image/zhao2020_fig0.png", "dark"]
+		"img_index": {
+			"main": "fig0"
+		},
+		"img": {
+			"fig0": {
+				"name": "Figure in Abstract",
+				"background": "dark",
+				"path": "/image/zhao2020_fig0.png"
+			}
+		}
 	},
 	"rt-guo2020": {
 		"type": "article",
@@ -479,7 +582,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevLett.124.106103",
 			"pdf": "/pdf/guo2020.pdf"
 		},
-		"img": ["/image/guo2020_fig4.png", "dark"]
+		"img_index": {
+			"main": "fig4"
+		},
+		"img": {
+			"fig4": {
+				"name": "Fig. 4",
+				"background": "dark",
+				"path": "/image/guo2020_fig4.png"
+			}
+		}
 	},
 	"rt-wang2020b": {
 		"type": "article",
@@ -510,7 +622,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1103/PhysRevB.100.205416",
 			"pdf": "/pdf/guo2019.pdf"
 		},
-		"img": ["/image/guo2019_fig2.png", "white"]
+		"img_index": {
+			"main": "fig2"
+		},
+		"img": {
+			"fig2": {
+				"name": "Fig. 2",
+				"background": "white",
+				"path": "/image/guo2019_fig2.png"
+			}
+		}
 	},
 	"rt-zhao2019a": {
 		"type": "article",
@@ -541,7 +662,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1364/JOSAA.35.001685",
 			"pdf": "/pdf/guo2018b.pdf"
 		},
-		"img": ["/image/guo2018b_fig5.png", "white"]
+		"img_index": {
+			"main": "fig5"
+		},
+		"img": {
+			"fig5": {
+				"name": "Fig. 5",
+				"background": "white",
+				"path": "/image/guo2018b_fig5.png"
+			}
+		}
 	},
 	"rt-liu2018c": {
 		"type": "article",
@@ -558,7 +688,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1038/s41567-018-0233-6",
 			"pdf": "/pdf/liu2018c.pdf"
 		},
-		"img": ["/image/liu2018c_fig2.png", "white"]
+		"img_index": {
+			"main": "fig2"
+		},
+		"img": {
+			"fig2": {
+				"name": "Fig. 2",
+				"background": "white",
+				"path": "/image/liu2018c_fig2.png"
+			}
+		}
 	},
 	"rt-guo2018a": {
 		"type": "article",
@@ -575,7 +714,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1364/OPTICA.5.000251",
 			"pdf": "/pdf/guo2018a.pdf"
 		},
-		"img": ["/image/guo2018a_fig2.png", "dark"]
+		"img_index": {
+			"main": "fig2"
+		},
+		"img": {
+			"fig2": {
+				"name": "Fig. 2",
+				"background": "dark",
+				"path": "/image/guo2018a_fig2.png"
+			}
+		}
 	},
 	"rt-zheng2017": {
 		"type": "article",
@@ -718,7 +866,16 @@ export const publications = {
 			"doi": "https://doi.org/10.1186/s43593-022-00036-w",
 			"pdf": "/pdf/guo2023.pdf"
 		},
-		"img": ["/image/guo2023_cover.png", "dark"]
+		"img_index": {
+			"main": "cover"
+		},
+		"img": {
+			"cover": {
+				"name": "Cover Image",
+				"background": "dark",
+				"path": "/image/guo2023_cover.png"
+			}
+		}
 	},
 	"rv-guo2022c": {
 		"type": "review",

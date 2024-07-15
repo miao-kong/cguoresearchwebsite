@@ -283,7 +283,9 @@ function main () {
 
         //finish bibtex
 
-        if (publication.img != null) {
+        if ((publication.img_index != null) && (publication.img_index.main != null)) {
+
+            let img_src = publication.img[publication.img_index.main];
 
             // This div ensures the integrity of image during webpage size adjustment
             let img_box_outer = document.createElement("div");
@@ -291,12 +293,12 @@ function main () {
             div_outer.appendChild(img_box_outer);
 
             let img_box = document.createElement("div");
-            img_box.setAttribute("class", "overflow-hidden" + (publication.img[1]=="white" ? " img-box-white" : ""));
+            img_box.setAttribute("class", "overflow-hidden" + (img_src.background=="white" ? " img-box-white" : ""));
             img_box_outer.appendChild(img_box);
     
             let img = document.createElement("img");
-            img.setAttribute("src", publication.img[0]);
-            img.setAttribute("class", "img-link img-size-pub img-fit-" + publication.img[1]);
+            img.setAttribute("class", "img-link img-size-pub img-fit-" + img_src.background);
+            img.setAttribute("src", img_src.path);
             img_box.appendChild(img);
 
         }
