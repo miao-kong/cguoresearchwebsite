@@ -1,4 +1,24 @@
 export const events = {
+    "ns-cleo2024": {
+        "type": "conference",
+        "display": false,
+        "title": "Unitary Control of Absorption and Emission",
+        "organizer": "Conference on Lasers and Electro-Optics (CLEO)",
+        "location": "Charlotte",
+        "year": 2024,
+        "month": "May",
+        "day": 10
+    },
+    "ns-apsmarch2024": {
+        "type": "conference",
+        "display": false,
+        "title": "Unitary Control of Absorption and Emission",
+        "organizer": "APS March Meeting",
+        "location": "Minneapolis",
+        "year": 2024,
+        "month": "March",
+        "day": 3
+    },
     "ns-spiepw2024a": {
         "type": "conference",
         "label": "Invited Talk",
@@ -11,7 +31,7 @@ export const events = {
         "month": "February",
         "day": 1
     },
-    "ns-spieop2023c": {
+    "ns-ipc2023": {
         "type": "conference",
         "display": false,
         "title": "Unitary Control of Optical Absorption and Emission",
@@ -50,7 +70,7 @@ export const events = {
         "month": "August",
         "day": 23
     },
-    "ns-spiepw2023d": {
+    "ns-cleo2023": {
         "type": "conference",
         "title": "Lorentz Reciprocity's Constraints on Reflection",
         "organizer": "Conference on Lasers and Electro-Optics (CLEO)",

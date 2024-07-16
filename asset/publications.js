@@ -1,4 +1,47 @@
 export const publications = {
+	"rt-guo2024a": {
+		"type": "article",
+		"preprint": true,
+		// "place": 45,
+		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
+		"author": ["Cheng Guo+", "Shanhui Fan+"],
+		"info": ["arXiv", "2311.00849"],
+		"year": 2023,
+		"month": "November",
+		"day": 1,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2311.00849"
+		}
+	},
+	"rt-guo2024": {
+		"type": "article",
+		"place": 45,
+		"title": "Topological Winding Guaranteed Coherent Orthogonal Scattering",
+		"author": ["Cheng Guo+", "Shanhui Fan+"],
+		"info": ["Physical Review A", "109, L061503"],
+		"year": 2024,
+		"month": "June",
+		"day": 27,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevA.109.L061503",
+			"pdf": "/pdf/guo2024.pdf",
+			"arxiv": "https://arxiv.org/abs/2406.18824"
+		}
+	},
+	"rt-huang2024": {
+		"type": "article",
+		"place": 44,
+		"title": "Light Bullet Generation via Stimulated Brillouin Scattering",
+		"author": ["Der-Han Huang", "Cheng Guo", "Shanhui Fan"],
+		"info": ["APL Photonics", "9, 061301"],
+		"year": 2024,
+		"month": "June",
+		"day": 25,
+		"resource": {
+			"doi": "https://doi.org/10.1063/5.0201756",
+			"pdf": "/pdf/huang2024.pdf"
+		}
+	},
 	"rt-li2024": {
 		"type": "article",
 		//"preprint": true,
