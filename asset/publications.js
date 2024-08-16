@@ -1,8 +1,46 @@
 export const publications = {
+	"rt-guo2024e": {
+		"type": "article",
+		"preprint": true,
+		"title": "Transport measurements of majorization order for wave coherence",
+		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
+		"info": ["arXiv", "2408.06386"],
+		"year": 2024,
+		"month": "August",
+		"day": 10,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2408.06386"
+		}
+	},
+	"rt-guo2024d": {
+		"type": "article",
+		"preprint": true,
+		"title": "Unitary control of multiport wave transmission",
+		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
+		"info": ["arXiv", "2408.05634"],
+		"year": 2024,
+		"month": "August",
+		"day": 10,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2408.05634"
+		}
+	},
+	"rt-fang2024": {
+		"type": "article",
+		"preprint": true,
+		"title": "Exceptional features in nonlinear Hermitian systems",
+		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
+		"info": ["arXiv", "2408.03751"],
+		"year": 2024,
+		"month": "August",
+		"day": 7,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2408.03751"
+		}
+	},
 	"rt-guo2024a": {
 		"type": "article",
 		"preprint": true,
-		// "place": 45,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2311.00849"],
@@ -11,6 +49,36 @@ export const publications = {
 		"day": 1,
 		"resource": {
 			"arxiv": "https://arxiv.org/abs/2311.00849"
+		}
+	},
+	"rt-guo2024c": {
+		"type": "article",
+		"place": 47,
+		"title": "Unitary control of partially coherent waves. II. Transmission or reflection",
+		"author": ["Cheng Guo+", "Shanhui Fan+"],
+		"info": ["Physical Review B", "110, 035431"],
+		"year": 2024,
+		"month": "July",
+		"day": 29,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevB.110.035431",
+			"pdf": "/pdf/guo2024c.pdf",
+			"arxiv": "https://arxiv.org/abs/2408.05642"
+		}
+	},
+	"rt-guo2024b": {
+		"type": "article",
+		"place": 46,
+		"title": "Unitary control of partially coherent waves. I. Absorption",
+		"author": ["Cheng Guo+", "Shanhui Fan+"],
+		"info": ["Physical Review B", "110, 035430"],
+		"year": 2024,
+		"month": "July",
+		"day": 29,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevB.110.035430",
+			"pdf": "/pdf/guo2024b.pdf",
+			"arxiv": "https://arxiv.org/abs/2408.05637"
 		}
 	},
 	"rt-guo2024": {
