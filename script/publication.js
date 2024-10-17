@@ -288,8 +288,15 @@ function main () {
             let img_src = publication.img[publication.img_index.main];
 
             // This div ensures the integrity of image during webpage size adjustment
-            let img_box_outer = document.createElement("div");
+            // let img_box_outer = document.createElement("div");
+            // img_box_outer.setAttribute("class", "d-none d-md-block");
+            // div_outer.appendChild(img_box_outer);
+
+            let img_box_outer = document.createElement("a");
             img_box_outer.setAttribute("class", "d-none d-md-block");
+            img_box_outer.setAttribute("href", publication.resource["pdf"]);
+            img_box_outer.setAttribute("target", "_blank");
+            img_box_outer.setAttribute("rel", "noopener");
             div_outer.appendChild(img_box_outer);
 
             let img_box = document.createElement("div");

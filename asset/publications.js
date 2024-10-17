@@ -1,7 +1,63 @@
 export const publications = {
+	"rt-fan2024": {
+		"type": "article",
+		"preprint": true,
+		"place": 54,
+		"title": "Optical modeling, solver, and design of wafer-scale single-enantiomer carbon nanotube film and reconfigurable chiral photonic device",
+		"author": ["Jichao Fan", "Benjamin Hillam", "Cheng Guo", "Hiroyuki Fujinami", "Shiba Koki", "Haoyu Xie", "Ruiyang Chen", "Kazuhiro Yanagi", "Weilu Gao"],
+		"info": ["arXiv", "2410.08586"],
+		"year": 2024,
+		"month": "October",
+		"day": 11,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2410.08586",
+			"pdf": "/pdf/fan2024_arxiv.pdf",
+		}
+	},
+	"rt-guo2024f": {
+		"type": "article",
+		"preprint": true,
+		"place": 53,
+		"title": "Passivity constraints on the relations between transmission, reflection, and absorption eigenvalues",
+		"author": ["Cheng Guo+", "Shanhui Fan+"],
+		"info": ["arXiv", "2410.04565"],
+		"year": 2024,
+		"month": "October",
+		"day": 6,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2410.04565",
+			"pdf": "/pdf/guo2024f_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig2a"
+		},
+		"img": {
+			"fig2a": {
+				"name": "Fig. 2(a)",
+				"background": "white",
+				"path": "/image/guo2024f_fig2a.png"
+			}
+		}
+	},
+	"rt-kim2024": {
+		"type": "article",
+		"preprint": true,
+		"place": 52,
+		"title": "Shaping space-time wavepackets beyond the paraxial limit using a dispersion magnifier",
+		"author": ["Dongha Kim", "Cheng Guo", "Peter B. Catrysse", "Shanhui Fan"],
+		"info": ["arXiv", "2409.10454"],
+		"year": 2024,
+		"month": "September",
+		"day": 16,
+		"resource": {
+			"arxiv": "https://arxiv.org/abs/2409.10454",
+			"pdf": "/pdf/kim2024_arxiv.pdf",
+		}
+	},
 	"rt-guo2024e": {
 		"type": "article",
 		"preprint": true,
+		"place": 51,
 		"title": "Transport measurements of majorization order for wave coherence",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.06386"],
@@ -9,12 +65,24 @@ export const publications = {
 		"month": "August",
 		"day": 10,
 		"resource": {
-			"arxiv": "https://arxiv.org/abs/2408.06386"
+			"arxiv": "https://arxiv.org/abs/2408.06386",
+			"pdf": "/pdf/guo2024e_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig1a"
+		},
+		"img": {
+			"fig1a": {
+				"name": "Fig. 1(a)",
+				"background": "white",
+				"path": "/image/guo2024e_fig1a.png"
+			}
 		}
 	},
 	"rt-guo2024d": {
 		"type": "article",
 		"preprint": true,
+		"place": 50,
 		"title": "Unitary control of multiport wave transmission",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.05634"],
@@ -22,12 +90,24 @@ export const publications = {
 		"month": "August",
 		"day": 10,
 		"resource": {
-			"arxiv": "https://arxiv.org/abs/2408.05634"
+			"arxiv": "https://arxiv.org/abs/2408.05634",
+			"pdf": "/pdf/guo2024d_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig1b"
+		},
+		"img": {
+			"fig1b": {
+				"name": "Fig. 1(b)",
+				"background": "white",
+				"path": "/image/guo2024d_fig1b.png"
+			}
 		}
 	},
 	"rt-fang2024": {
 		"type": "article",
 		"preprint": true,
+		"place": 49,
 		"title": "Exceptional features in nonlinear Hermitian systems",
 		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
 		"info": ["arXiv", "2408.03751"],
@@ -35,12 +115,14 @@ export const publications = {
 		"month": "August",
 		"day": 7,
 		"resource": {
-			"arxiv": "https://arxiv.org/abs/2408.03751"
+			"arxiv": "https://arxiv.org/abs/2408.03751",
+			"pdf": "/pdf/fang2024_arxiv.pdf",
 		}
 	},
 	"rt-guo2024a": {
 		"type": "article",
 		"preprint": true,
+		"place": 48,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2311.00849"],
@@ -48,7 +130,18 @@ export const publications = {
 		"month": "November",
 		"day": 1,
 		"resource": {
-			"arxiv": "https://arxiv.org/abs/2311.00849"
+			"arxiv": "https://arxiv.org/abs/2311.00849",
+			"pdf": "/pdf/guo2024a_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig1"
+		},
+		"img": {
+			"fig1": {
+				"name": "Fig. 1",
+				"background": "white",
+				"path": "/image/guo2024a_fig1.png"
+			}
 		}
 	},
 	"rt-guo2024c": {
@@ -62,8 +155,19 @@ export const publications = {
 		"day": 29,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.110.035431",
+			"arxiv": "https://arxiv.org/abs/2408.05642",
 			"pdf": "/pdf/guo2024c.pdf",
-			"arxiv": "https://arxiv.org/abs/2408.05642"
+			// "pdf": "/pdf/guo2024c_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig1c"
+		},
+		"img": {
+			"fig1c": {
+				"name": "Fig. 1(c)",
+				"background": "white",
+				"path": "/image/guo2024c_fig1c.png"
+			}
 		}
 	},
 	"rt-guo2024b": {
@@ -77,8 +181,19 @@ export const publications = {
 		"day": 29,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.110.035430",
+			"arxiv": "https://arxiv.org/abs/2408.05637",
 			"pdf": "/pdf/guo2024b.pdf",
-			"arxiv": "https://arxiv.org/abs/2408.05637"
+			// "pdf": "/pdf/guo2024b_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig1a"
+		},
+		"img": {
+			"fig1a": {
+				"name": "Fig. 1(a)",
+				"background": "white",
+				"path": "/image/guo2024b_fig1a.png"
+			}
 		}
 	},
 	"rt-guo2024": {
@@ -92,8 +207,19 @@ export const publications = {
 		"day": 27,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevA.109.L061503",
+			"arxiv": "https://arxiv.org/abs/2406.18824",
 			"pdf": "/pdf/guo2024.pdf",
-			"arxiv": "https://arxiv.org/abs/2406.18824"
+			// "pdf": "/pdf/guo2024_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig2e"
+		},
+		"img": {
+			"fig2e": {
+				"name": "Fig. 2(e)",
+				"background": "white",
+				"path": "/image/guo2024_fig2e.png"
+			}
 		}
 	},
 	"rt-huang2024": {
@@ -122,8 +248,9 @@ export const publications = {
 		"day": 5,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.109.L041102",
+			"arxiv": "https://arxiv.org/abs/2309.16152",
 			"pdf": "/pdf/li2024.pdf",
-			"arxiv": "https://arxiv.org/abs/2309.16152"
+			// "pdf": "/pdf/li2024_arxiv.pdf",
 		}
 	},
 	"rt-long2023": {
@@ -137,8 +264,9 @@ export const publications = {
 		"day": 30,
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevApplied.20.L051001",
+			"arxiv": "https://arxiv.org/abs/2306.03850",
 			"pdf": "/pdf/long2023.pdf",
-			"arxiv": "https://arxiv.org/abs/2306.03850"
+			// "pdf": "/pdf/long2023_arxiv.pdf",
 		}
 	},
 	"rt-guo2023a": {
@@ -959,8 +1087,9 @@ export const publications = {
 		"day": 4,
 		"resource": {
 			"doi": "https://doi.org/10.1088/2040-8986/ace4dc",
+			"arxiv": "https://arxiv.org/abs/2210.11273",
 			"pdf": "/pdf/shen2022.pdf",
-			"arxiv": "https://arxiv.org/abs/2210.11273"
+			// "pdf": "/pdf/shen2022_arxiv.pdf",
 		}
 	},
 	"rv-guo2023": {
