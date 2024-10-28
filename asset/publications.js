@@ -2,7 +2,7 @@ export const publications = {
 	"rt-fan2024": {
 		"type": "article",
 		"preprint": true,
-		"place": 54,
+		"place": 55,
 		"title": "Optical Modeling, Solver, and Design of Wafer-Scale Single-Enantiomer Carbon Nanotube Film and Reconfigurable Chiral Photonic Device",
 		"author": ["Jichao Fan", "Benjamin Hillam", "Cheng Guo", "Hiroyuki Fujinami", "Shiba Koki", "Haoyu Xie", "Ruiyang Chen", "Kazuhiro Yanagi", "Weilu Gao"],
 		"info": ["arXiv", "2410.08586"],
@@ -17,7 +17,7 @@ export const publications = {
 	"rt-guo2024f": {
 		"type": "article",
 		"preprint": true,
-		"place": 53,
+		"place": 54,
 		"title": "Passivity Constraints on the Relations Between Transmission, Reflection, and Absorption Eigenvalues",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2410.04565"],
@@ -42,7 +42,7 @@ export const publications = {
 	"rt-kim2024": {
 		"type": "article",
 		"preprint": true,
-		"place": 52,
+		"place": 53,
 		"title": "Shaping Space-Time Wavepackets Beyond the Paraxial Limit Using a Dispersion Magnifier",
 		"author": ["Dongha Kim", "Cheng Guo", "Peter B. Catrysse", "Shanhui Fan"],
 		"info": ["arXiv", "2409.10454"],
@@ -57,7 +57,7 @@ export const publications = {
 	"rt-guo2024e": {
 		"type": "article",
 		"preprint": true,
-		"place": 51,
+		"place": 52,
 		"title": "Transport Measurements of Majorization Order for Wave Coherence",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.06386"],
@@ -82,7 +82,7 @@ export const publications = {
 	"rt-guo2024d": {
 		"type": "article",
 		"preprint": true,
-		"place": 50,
+		"place": 51,
 		"title": "Unitary Control of Multiport Wave Transmission",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.05634"],
@@ -107,7 +107,7 @@ export const publications = {
 	"rt-fang2024": {
 		"type": "article",
 		"preprint": true,
-		"place": 49,
+		"place": 50,
 		"title": "Exceptional Features in Nonlinear Hermitian Systems",
 		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
 		"info": ["arXiv", "2408.03751"],
@@ -122,7 +122,7 @@ export const publications = {
 	"rt-guo2024a": {
 		"type": "article",
 		"preprint": true,
-		"place": 48,
+		"place": 49,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2311.00849"],
@@ -142,6 +142,20 @@ export const publications = {
 				"background": "white",
 				"path": "/image/guo2024a_fig1.png"
 			}
+		}
+	},
+	"rt-abrashuly2024": {
+		"type": "article",
+		"place": 48,
+		"title": "Weyl Points in a Twisted Multilayer Photonic System",
+		"author": ["Aivar Abrashuly", "Cheng Guo", "Georgia T. Papadakis", "Peter B. Catrysse", "Shanhui Fan"],
+		"info": ["Applied Physics Letters", "125, 171703"],
+		"year": 2024,
+		"month": "October",
+		"day": 25,
+		"resource": {
+			"doi": "https://doi.org/10.1063/5.0231392",
+			"pdf": "/pdf/abrashuly2024.pdf",
 		}
 	},
 	"rt-guo2024c": {
