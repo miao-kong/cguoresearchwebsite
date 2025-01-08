@@ -14,50 +14,10 @@ export const publications = {
 			"pdf": "/pdf/fan2024_arxiv.pdf",
 		}
 	},
-	"rt-guo2024f": {
-		"type": "article",
-		"preprint": true,
-		"place": 54,
-		"title": "Passivity Constraints on the Relations Between Transmission, Reflection, and Absorption Eigenvalues",
-		"author": ["Cheng Guo+", "Shanhui Fan+"],
-		"info": ["arXiv", "2410.04565"],
-		"year": 2024,
-		"month": "October",
-		"day": 6,
-		"resource": {
-			"arxiv": "https://arxiv.org/abs/2410.04565",
-			"pdf": "/pdf/guo2024f_arxiv.pdf",
-		},
-		"img_index": {
-			"main": "fig2a"
-		},
-		"img": {
-			"fig2a": {
-				"name": "Fig. 2(a)",
-				"background": "white",
-				"path": "/image/guo2024f_fig2a.png"
-			}
-		}
-	},
-	"rt-kim2024": {
-		"type": "article",
-		"preprint": true,
-		"place": 53,
-		"title": "Shaping Space-Time Wavepackets Beyond the Paraxial Limit Using a Dispersion Magnifier",
-		"author": ["Dongha Kim", "Cheng Guo", "Peter B. Catrysse", "Shanhui Fan"],
-		"info": ["arXiv", "2409.10454"],
-		"year": 2024,
-		"month": "September",
-		"day": 16,
-		"resource": {
-			"arxiv": "https://arxiv.org/abs/2409.10454",
-			"pdf": "/pdf/kim2024_arxiv.pdf",
-		}
-	},
 	"rt-guo2024e": {
 		"type": "article",
 		"preprint": true,
-		"place": 52,
+		"place": 54,
 		"title": "Transport Measurements of Majorization Order for Wave Coherence",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.06386"],
@@ -82,7 +42,7 @@ export const publications = {
 	"rt-guo2024d": {
 		"type": "article",
 		"preprint": true,
-		"place": 51,
+		"place": 53,
 		"title": "Unitary Control of Multiport Wave Transmission",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.05634"],
@@ -107,7 +67,7 @@ export const publications = {
 	"rt-fang2024": {
 		"type": "article",
 		"preprint": true,
-		"place": 50,
+		"place": 52,
 		"title": "Exceptional Features in Nonlinear Hermitian Systems",
 		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
 		"info": ["arXiv", "2408.03751"],
@@ -122,7 +82,7 @@ export const publications = {
 	"rt-guo2024a": {
 		"type": "article",
 		"preprint": true,
-		"place": 49,
+		"place": 51,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2311.00849"],
@@ -141,6 +101,49 @@ export const publications = {
 				"name": "Fig. 1",
 				"background": "white",
 				"path": "/image/guo2024a_fig1.png"
+			}
+		}
+	},
+	"rt-kim2024": {
+		"type": "article",
+		"place": 50,
+		"title": "Shaping Space-Time Wavepackets Beyond the Paraxial Limit Using a Dispersion Magnifier",
+		"author": ["Dongha Kim", "Cheng Guo", "Peter B. Catrysse", "Shanhui Fan"],
+		"info": ["Physical Review A", "111, 013504"],
+		"year": 2025,
+		"month": "January",
+		"day": 6,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevA.111.013504",
+			"arxiv": "https://arxiv.org/abs/2409.10454",
+			"pdf": "/pdf/kim2024.pdf",
+			// "pdf": "/pdf/kim2024_arxiv.pdf",
+		}
+	},
+	"rt-guo2024f": {
+		"type": "article",
+		"place": 49,
+		"label": "Editors' Suggestion",
+		"title": "Passivity Constraints on the Relations Between Transmission, Reflection, and Absorption Eigenvalues",
+		"author": ["Cheng Guo+", "Shanhui Fan+"],
+		"info": ["Physical Review B", "110, 205431"],
+		"year": 2024,
+		"month": "November",
+		"day": 26,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevB.110.205431",
+			"arxiv": "https://arxiv.org/abs/2410.04565",
+			"pdf": "/pdf/guo2024f.pdf"
+			// "pdf": "/pdf/guo2024f_arxiv.pdf",
+		},
+		"img_index": {
+			"main": "fig2a"
+		},
+		"img": {
+			"fig2a": {
+				"name": "Fig. 2(a)",
+				"background": "white",
+				"path": "/image/guo2024f_fig2a.png"
 			}
 		}
 	},
