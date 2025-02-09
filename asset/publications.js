@@ -1,23 +1,8 @@
 export const publications = {
-	"rt-fan2024": {
-		"type": "article",
-		"preprint": true,
-		"place": 55,
-		"title": "Optical Modeling, Solver, and Design of Wafer-Scale Single-Enantiomer Carbon Nanotube Film and Reconfigurable Chiral Photonic Device",
-		"author": ["Jichao Fan", "Benjamin Hillam", "Cheng Guo", "Hiroyuki Fujinami", "Shiba Koki", "Haoyu Xie", "Ruiyang Chen", "Kazuhiro Yanagi", "Weilu Gao"],
-		"info": ["arXiv", "2410.08586"],
-		"year": 2024,
-		"month": "October",
-		"day": 11,
-		"resource": {
-			"arxiv": "https://arxiv.org/abs/2410.08586",
-			"pdf": "/pdf/fan2024_arxiv.pdf",
-		}
-	},
 	"rt-guo2024e": {
 		"type": "article",
 		"preprint": true,
-		"place": 54,
+		"place": 55,
 		"title": "Transport Measurements of Majorization Order for Wave Coherence",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.06386"],
@@ -42,7 +27,7 @@ export const publications = {
 	"rt-guo2024d": {
 		"type": "article",
 		"preprint": true,
-		"place": 53,
+		"place": 54,
 		"title": "Unitary Control of Multiport Wave Transmission",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.05634"],
@@ -67,7 +52,7 @@ export const publications = {
 	"rt-fang2024": {
 		"type": "article",
 		"preprint": true,
-		"place": 52,
+		"place": 53,
 		"title": "Exceptional Features in Nonlinear Hermitian Systems",
 		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
 		"info": ["arXiv", "2408.03751"],
@@ -82,7 +67,7 @@ export const publications = {
 	"rt-guo2024a": {
 		"type": "article",
 		"preprint": true,
-		"place": 51,
+		"place": 52,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2311.00849"],
@@ -102,6 +87,22 @@ export const publications = {
 				"background": "white",
 				"path": "/image/guo2024a_fig1.png"
 			}
+		}
+	},
+	"rt-fan2024": {
+		"type": "article",
+		"place": 51,
+		"title": "Optical Modeling, Solver, and Design of Macroscopic Single-Enantiomer Carbon Nanotube Film and Reconfigurable Chiral Photonic Device",
+		"author": ["Jichao Fan", "Benjamin Hillam", "Cheng Guo", "Hiroyuki Fujinami", "Koki Shiba", "Haoyu Xie", "Ruiyang Chen", "Kazuhiro Yanagi", "Weilu Gao"],
+		"info": ["Carbon", "235, 120016"],
+		"year": 2025,
+		"month": "March",
+		"day": 10,
+		"resource": {
+			"doi": "https://doi.org/10.1016/j.carbon.2025.120016",
+			"arxiv": "https://arxiv.org/abs/2410.08586",
+			"pdf": "/pdf/fan2024.pdf",
+			// "pdf": "/pdf/fan2024_arxiv.pdf",
 		}
 	},
 	"rt-kim2024": {
