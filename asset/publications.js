@@ -24,35 +24,10 @@ export const publications = {
 			}
 		}
 	},
-	"rt-guo2024d": {
-		"type": "article",
-		"preprint": true,
-		"place": 54,
-		"title": "Unitary Control of Multiport Wave Transmission",
-		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
-		"info": ["arXiv", "2408.05634"],
-		"year": 2024,
-		"month": "August",
-		"day": 10,
-		"resource": {
-			"arxiv": "https://arxiv.org/abs/2408.05634",
-			"pdf": "/pdf/guo2024d_arxiv.pdf",
-		},
-		"img_index": {
-			"main": "fig1b"
-		},
-		"img": {
-			"fig1b": {
-				"name": "Fig. 1(b)",
-				"background": "white",
-				"path": "/image/guo2024d_fig1b.png"
-			}
-		}
-	},
 	"rt-fang2024": {
 		"type": "article",
 		"preprint": true,
-		"place": 53,
+		"place": 54,
 		"title": "Exceptional Features in Nonlinear Hermitian Systems",
 		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
 		"info": ["arXiv", "2408.03751"],
@@ -67,7 +42,7 @@ export const publications = {
 	"rt-guo2024a": {
 		"type": "article",
 		"preprint": true,
-		"place": 52,
+		"place": 53,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
 		"info": ["arXiv", "2311.00849"],
@@ -86,6 +61,33 @@ export const publications = {
 				"name": "Fig. 1",
 				"background": "white",
 				"path": "/image/guo2024a_fig1.png"
+			}
+		}
+	},
+	"rt-guo2024d": {
+		"type": "article",
+		"place": 52,
+		"label": "Editors' Suggestion",
+		"title": "Unitary Control of Multiport Wave Transmission",
+		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
+		"info": ["Physical Review A", "111, 023507"],
+		"year": 2025,
+		"month": "February",
+		"day": 10,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevA.111.023507",
+			"arxiv": "https://arxiv.org/abs/2408.05634",
+			// "pdf": "/pdf/guo2024d_arxiv.pdf",
+			"pdf": "/pdf/guo2024d.pdf"
+		},
+		"img_index": {
+			"main": "fig1b"
+		},
+		"img": {
+			"fig1b": {
+				"name": "Fig. 1(b)",
+				"background": "white",
+				"path": "/image/guo2024d_fig1b.png"
 			}
 		}
 	},
