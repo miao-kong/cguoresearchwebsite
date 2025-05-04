@@ -54,7 +54,8 @@ export const contacts = [
     ["ORCID", "https://orcid.org/0000-0003-4913-8150", "./icon/orcid.svg"],
     ["LinkedIn", "https://www.linkedin.com/in/chengguo23", "./icon/linkedin.svg"],
     ["Twitter", "https://www.twitter.com/chengguo23", "./icon/twitter.svg"],
-    ["Email", "mailto:guocheng@stanford.edu", "./icon/email.svg"]
+    // ["Email", "mailto:guocheng@stanford.edu", "./icon/email.svg"],
+    ["Email", "mailto:chengguo@utexas.edu", "./icon/email.svg"]
 ];
 
 
