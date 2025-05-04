@@ -1,8 +1,23 @@
 export const publications = {
+	"rt-yessenov2025": {
+		"type": "article",
+		"preprint": true,
+		"place": 57,
+		"title": "Ultrafast Space-Time Optical Merons in Momentum-Energy Space",
+		"author": ["Murat Yessenov", "Ahmed H. Dorrah", "Cheng Guo", "Layton A. Hall", "Joon-Suh Park", "Justin Free", "Eric G. Johnson", "Federico Capasso", "Shanhui Fan", "Ayman F. Abouraddy"],
+		"info": ["arXiv", "2503.11980"],
+		"year": 2025,
+		"month": "March",
+		"day": 15,
+		"resource": {
+			"arxiv": "https://doi.org/10.48550/arXiv.2503.11980",
+			"pdf": "/pdf/yessenov2025_arxiv.pdf",
+		}
+	},
 	"rt-guo2024e": {
 		"type": "article",
 		"preprint": true,
-		"place": 55,
+		"place": 56,
 		"title": "Transport Measurements of Majorization Order for Wave Coherence",
 		"author": ["Cheng Guo+", "David A. B. Miller", "Shanhui Fan+"],
 		"info": ["arXiv", "2408.06386"],
@@ -26,32 +41,34 @@ export const publications = {
 	},
 	"rt-fang2024": {
 		"type": "article",
-		"preprint": true,
-		"place": 54,
+		"place": 55,
 		"title": "Exceptional Features in Nonlinear Hermitian Systems",
 		"author": ["Liang Fang", "Kai Bai", "Cheng Guo", "Tian-Rui Liu", "Jia-Zheng Li", "Meng Xiao"],
-		"info": ["arXiv", "2408.03751"],
-		"year": 2024,
-		"month": "August",
-		"day": 7,
+		"info": ["Physical Review B", "111, L161102"],
+		"year": 2025,
+		"month": "April",
+		"day": 3,
 		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevB.111.L161102",
 			"arxiv": "https://arxiv.org/abs/2408.03751",
-			"pdf": "/pdf/fang2024_arxiv.pdf",
+			// "pdf": "/pdf/fang2024_arxiv.pdf",
+			"pdf": "/pdf/fang2024.pdf",
 		}
 	},
 	"rt-guo2024a": {
 		"type": "article",
-		"preprint": true,
-		"place": 53,
+		"place": 54,
 		"title": "Winding Number Criterion for the Origin to Belong to the Numerical Range of a Matrix on a Loop of Matrices",
 		"author": ["Cheng Guo+", "Shanhui Fan+"],
-		"info": ["arXiv", "2311.00849"],
-		"year": 2023,
-		"month": "November",
-		"day": 1,
+		"info": ["Mathematics Open", "04, 2550003"],
+		"year": 2025,
+		"month": "March",
+		"day": 18,
 		"resource": {
+			"doi": "https://doi.org/10.1142/S2811007225500038",
 			"arxiv": "https://arxiv.org/abs/2311.00849",
-			"pdf": "/pdf/guo2024a_arxiv.pdf",
+			// "pdf": "/pdf/guo2024a_arxiv.pdf",
+			"pdf": "/pdf/guo2024a.pdf",
 		},
 		"img_index": {
 			"main": "fig1"
@@ -62,6 +79,22 @@ export const publications = {
 				"background": "white",
 				"path": "/image/guo2024a_fig1.png"
 			}
+		}
+	},
+	"rt-wang2025": {
+		"type": "article",
+		"place": 53,
+		"title": "Spatiotemporal Steering of Nondiffracting Wave Packets",
+		"author": ["Haiwen Wang", "Cheng Guo", "Shanhui Fan"],
+		"info": ["Physical Review Letter", "134, 073803"],
+		"year": 2025,
+		"month": "February",
+		"day": 20,
+		"resource": {
+			"doi": "https://doi.org/10.1103/PhysRevLett.134.073803",
+			// "arxiv": "https://arxiv.org/abs/2408.05634",
+			// "pdf": "/pdf/guo2024d_arxiv.pdf",
+			"pdf": "/pdf/wang2025.pdf"
 		}
 	},
 	"rt-guo2024d": {
@@ -1094,6 +1127,21 @@ export const publications = {
 		"resource": {
 			"doi": "https://doi.org/10.1103/PhysRevB.92.041203",
 			"pdf": "/pdf/zhang2015e.pdf"
+		}
+	},
+	"rt-monticone2025": {
+		"type": "review",
+		"preprint": true,
+		"place": 4,
+		"title": "Roadmap on Nonlocality in Photonic Materials and Metamaterials",
+		"author": ["Francesco Monticone", "N. Asger Mortensen", "Antonio I. Fernández-Domínguez", "Yu Luo", "Xuezhi Zheng", "Christos Tserkezis", "Jacob B. Khurgin", "Tigran V. Shahbazyan", "André J. Chaves", "Nuno M. R. Peres", "Gino Wegner", "Kurt Busch", "Huatian Hu", "Fabio Della Sala", "Pu Zhang", "Cristian Ciracì", "Javier Aizpurua", "Antton Babaze", "Andrei G. Borisov", "Xue-Wen Chen", "Thomas Christensen", "Wei Yan", "Yi Yang", "Ulrich Hohenester", "Lorenz Huber", "Martijn Wubs", "Simone De Liberato", "P. A. D. Gonçalves", "F. Javier García De Abajo", "Ortwin Hess", "Illya Tarasenko", "Joel D. Cox", "Line Jelver", "Eduardo J. C. Dias", "Miguel Sánchez Sánchez", "Dionisios Margetis", "Guillermo Gómez-Santos", "Tobias Stauber", "Sergei Tretyakov", "Constantin Simovski", "Samaneh Pakniyat", "J. Sebastián Gómez-Díaz", "Igor V. Bondarev", "Svend-Age Biehs", "Alexandra Boltasseva", "Vladimir M. Shalaev", "Alexey V. Krasavin", "Anatoly V. Zayats", "Andrea Alù", "Jung-Hwan Song", "Mark L. Brongersma", "Uriel Levy", "Olivia Y. Long", "Cheng Guo", "Shanhui Fan", "Sergey I. Bozhevolnyi", "Adam Overvig", "Filipa R. Prudêncio", "Mário G. Silveirinha", "S. Ali Hassani Gangaraj", "Christos Argyropoulos", "Paloma A. Huidobro", "Emanuele Galiffi", "Fan Yang", "John B. Pendry", "David A. B. Miller"],
+		"info": ["arXiv", "2503.00519"],
+		"year": 2025,
+		"month": "March",
+		"day": 28,
+		"resource": {
+			"arxiv": "https://doi.org/10.48550/arXiv.2503.00519",
+			"pdf": "/pdf/monticone2025_arxiv.pdf",
 		}
 	},
 	"rv-shen2022": {
