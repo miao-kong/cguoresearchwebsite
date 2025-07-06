@@ -1129,19 +1129,19 @@ export const publications = {
 			"pdf": "/pdf/zhang2015e.pdf"
 		}
 	},
-	"rt-monticone2025": {
+	"rv-monticone2025": {
 		"type": "review",
-		"preprint": true,
 		"place": 4,
-		"title": "Roadmap on Nonlocality in Photonic Materials and Metamaterials",
-		"author": ["Francesco Monticone", "N. Asger Mortensen", "Antonio I. Fernández-Domínguez", "Yu Luo", "Xuezhi Zheng", "Christos Tserkezis", "Jacob B. Khurgin", "Tigran V. Shahbazyan", "André J. Chaves", "Nuno M. R. Peres", "Gino Wegner", "Kurt Busch", "Huatian Hu", "Fabio Della Sala", "Pu Zhang", "Cristian Ciracì", "Javier Aizpurua", "Antton Babaze", "Andrei G. Borisov", "Xue-Wen Chen", "Thomas Christensen", "Wei Yan", "Yi Yang", "Ulrich Hohenester", "Lorenz Huber", "Martijn Wubs", "Simone De Liberato", "P. A. D. Gonçalves", "F. Javier García De Abajo", "Ortwin Hess", "Illya Tarasenko", "Joel D. Cox", "Line Jelver", "Eduardo J. C. Dias", "Miguel Sánchez Sánchez", "Dionisios Margetis", "Guillermo Gómez-Santos", "Tobias Stauber", "Sergei Tretyakov", "Constantin Simovski", "Samaneh Pakniyat", "J. Sebastián Gómez-Díaz", "Igor V. Bondarev", "Svend-Age Biehs", "Alexandra Boltasseva", "Vladimir M. Shalaev", "Alexey V. Krasavin", "Anatoly V. Zayats", "Andrea Alù", "Jung-Hwan Song", "Mark L. Brongersma", "Uriel Levy", "Olivia Y. Long", "Cheng Guo", "Shanhui Fan", "Sergey I. Bozhevolnyi", "Adam Overvig", "Filipa R. Prudêncio", "Mário G. Silveirinha", "S. Ali Hassani Gangaraj", "Christos Argyropoulos", "Paloma A. Huidobro", "Emanuele Galiffi", "Fan Yang", "John B. Pendry", "David A. B. Miller"],
-		"info": ["arXiv", "2503.00519"],
+		"title": "Nonlocality in Photonic Materials and Metamaterials: Roadmap",
+		"author": ["Francesco Monticone", "N. Asger Mortensen", "Antonio I. Fernández-Domínguez", "Yu Luo", "Xuezhi Zheng", "Christos Tserkezis", "Jacob B. Khurgin", "Tigran V. Shahbazyan", "André J. Chaves", "Nuno M. R. Peres", "Gino Wegner", "Kurt Busch", "Huatian Hu", "Fabio Della Sala", "Pu Zhang", "Cristian Ciracì", "Javier Aizpurua", "Antton Babaze", "Andrei G. Borisov", "Xue-Wen Chen", "Thomas Christensen", "Wei Yan", "Yi Yang", "Ulrich Hohenester", "Lorenz Huber", "Martijn Wubs", "Simone De Liberato", "P. A. D. Gonçalves", "F. Javier García De Abajo", "Ortwin Hess", "Illya Tarasenko", "Joel D. Cox", "Line Jelver", "Eduardo J. C. Dias", "Miguel Sánchez Sánchez", "Dionisios Margetis", "Guillermo Gómez-Santos", "Igor M. Vasilevskiy", "Tobias Stauber", "Sergei Tretyakov", "Constantin Simovski", "Samaneh Pakniyat", "J. Sebastián Gómez-Díaz", "Igor V. Bondarev", "Svend-Age Biehs", "Alexandra Boltasseva", "Vladimir M. Shalaev", "Alexey V. Krasavin", "Anatoly V. Zayats", "Andrea Alù", "Jung-Hwan Song", "Mark L. Brongersma", "Uriel Levy", "Olivia Y. Long", "Cheng Guo", "Shanhui Fan", "Sergey I. Bozhevolnyi", "Adam Overvig", "Filipa R. Prudêncio", "Mário G. Silveirinha", "S. Ali Hassani Gangaraj", "Christos Argyropoulos", "Paloma A. Huidobro", "Emanuele Galiffi", "Fan Yang", "John B. Pendry", "David A. B. Miller"],
+		"info": ["Optical Materials Express", "15, 1544-1709"],
 		"year": 2025,
-		"month": "March",
-		"day": 28,
+		"month": "June",
+		"day": 18,
 		"resource": {
+			"doi": "https://doi.org/10.1364/OME.559374",
 			"arxiv": "https://doi.org/10.48550/arXiv.2503.00519",
-			"pdf": "/pdf/monticone2025_arxiv.pdf",
+			// "pdf": "/pdf/monticone2025_arxiv.pdf",
 		}
 	},
 	"rv-shen2022": {
